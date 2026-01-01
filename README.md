@@ -49,7 +49,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
-📁 Folder Structure
+## 📁 Folder Structure
 Java programming codes
 -  AbstractClasses/
    - ├── Car.java
@@ -146,7 +146,7 @@ Java programming codes
   
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Java
 
@@ -160,7 +160,7 @@ IDEs: Eclipse, IntelliJ IDEA, VS Code
 
 ---
 
-🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 - By exploring this repository, you will:
 
@@ -174,7 +174,7 @@ IDEs: Eclipse, IntelliJ IDEA, VS Code
 
 ---
 
-👤 Author
+## 👤 Author
 
 Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
@@ -183,7 +183,7 @@ Mayank Kapoor
 
 ---
 
-⭐ Support
+## ⭐ Support
 
 If you find this project helpful:
 
@@ -196,7 +196,7 @@ Happy Coding! 🚀
 
 ---
 
-🔥 Next Improvements (Optional)
+## 🔥 Next Improvements (Optional)
 
 - Add **badges** for Java, GitHub stars, and license
 
