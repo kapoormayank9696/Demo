@@ -1,4 +1,4 @@
-#📘 Java Object-Oriented Programming & Projects
+## 📘 Java Object-Oriented Programming (OOP) & Projects
 
 This repository contains Java programs and projects demonstrating key Java concepts.
 It is designed for beginners and intermediate learners who want to understand Java programming in a practical and hands-on way.
