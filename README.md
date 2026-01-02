@@ -40,11 +40,8 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 - 🎮 Projects
     - Dice Game
-
     - Calculator
-     
     - Car Booking
-
     - Other small Java projects
 
 ---
