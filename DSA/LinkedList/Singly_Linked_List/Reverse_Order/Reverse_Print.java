@@ -10,7 +10,8 @@ public class Reverse_Print {
         // Default Access Modifier and Data Members
         int data;
         Node next;
-        Node(int data){
+        // Parameterized Constructor
+        public Node(int data){
             this.data = data;
             this.next = null;
         }

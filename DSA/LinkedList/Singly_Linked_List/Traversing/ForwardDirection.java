@@ -1,10 +1,14 @@
 // Java Demonstrate Print The Singly Linked List In Forward Direction
+
+import java.util.Scanner;
+
 public class ForwardDirection {
     // Node class to represent each element in the Singly Linked List
     class Node{
         // Default Access Modifier and Data Members
         int data;
         Node next;
+        // Parameterized Constructor
         public Node(int data){
             this.data = data;
             this.next = null;
@@ -57,17 +61,16 @@ public class ForwardDirection {
 
         // Call the class of Forward Direction 
         ForwardDirection list = new ForwardDirection();
-        System.out.print("After Insert Element In Singly Linked List: ");
-        list.Insert(7);
-        list.Insert(-2);
-        list.Insert(0);
-        list.Insert(89);
-        list.Insert(35);
-        list.Insert(-96);
-        list.Insert(1);
-        list.Insert(0);
-
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Number Of terms: ");
+        int n=sc.nextInt();
+        System.out.print("Enter Elements: ");
+        for(int i=0;i<n;i++){
+            int value=sc.nextInt();
+            list.Insert(value);
+        }
         // Display the Linked List 
+        System.out.print("Original Singly Linked List: ");
         list.display();
 
         // Forward Direction Traversal

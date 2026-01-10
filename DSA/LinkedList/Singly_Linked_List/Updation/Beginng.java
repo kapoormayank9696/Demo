@@ -1,6 +1,7 @@
 // Singly Linked List Implementation in Java
 
 // Time Complexity O(1)
+import java.util.Scanner;
 public class Beginng {
 
     // Node class to represent each element in the Singly Linked List
@@ -61,22 +62,23 @@ public class Beginng {
 
         // Call the class of insert elements at beginng of singly linked list
         Beginng list = new Beginng();
-        System.out.print("After Insert Element In Singly Linked List: ");
-        list.Insert(7);
-        list.Insert(-2);
-        list.Insert(0);
-        list.Insert(89);
-        list.Insert(35);
-        list.Insert(6);
-        list.Insert(1);
-        list.Insert(0);
-
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of terms: ");
+        int n=sc.nextInt();
+        System.out.print("Enter Elements: ");
+        for(int i=0;i<n;i++){
+            int value=sc.nextInt();
+            list.Insert(value);
+        }
+        System.out.print("Original Singly Linked List: ");
         // Display the Linked List 
         list.display();
 
         // Update At Begining
+        System.out.print("Enter Updation value at beginning: ");
+        int value=sc.nextInt();
+        list.UpdateAtBeginning(value);
         System.out.print("After Update At Beginning In Singly Linked List: ");
-        list.UpdateAtBeginning(56);
         
         // Display the Linked List 
         list.display();

@@ -1,5 +1,7 @@
 // Singly Linked List Implementation in Java
+
 // Time Complexity O(n)
+import java.util.Scanner;
 public class Specific {
 
     // Node class to represent each element in the Singly Linked List
@@ -71,22 +73,25 @@ public class Specific {
         
         // Call the class of insert elements at end of singly linked list
         Specific list = new Specific();
-        System.out.print("After Insert Element In Singly Linked List: ");
-        list.Insert(7);
-        list.Insert(-2);
-        list.Insert(0);
-        list.Insert(89);
-        list.Insert(35);
-        list.Insert(-96);
-        list.Insert(1);
-        list.Insert(0);
-
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of terms: ");
+        int n=sc.nextInt();
+        System.out.print("Enter Elements: ");
+        for(int i=0;i<n;i++){
+            int value=sc.nextInt();
+            list.Insert(value);
+        }
         // Display the Linked List 
+        System.out.print("Original Singly Linked List: ");
         list.display();
 
         // Update At Specific Position
+        System.out.print("Enter index for updation the value: ");
+        int index=sc.nextInt();
+        System.out.print("Enter Updation Value at specific position:  ");
+        int value=sc.nextInt();
+        list.UpdateAtSpecific(index, value);
         System.out.print("After Update At Specific Position In Singly Linked List: ");
-        list.UpdateAtSpecific(2,56);
 
         // Display the Linked List 
         list.display();
