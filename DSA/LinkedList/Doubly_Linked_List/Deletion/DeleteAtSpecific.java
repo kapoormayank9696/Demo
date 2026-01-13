@@ -1,9 +1,10 @@
-// Doubly Linked List Implementation In Java and Delete First Element From Beginning
+// Doubly Linked List Implementation In Java and Delete First Element From Specific Position
 
 import java.util.Scanner;
 
-public class DeleteAtSpecific {
+public class DeleteAtSpecific{
     class Node{
+        // Default Access Modifier and Data Memebers
         int data;
         Node next;
         @SuppressWarnings("unused")
@@ -15,10 +16,10 @@ public class DeleteAtSpecific {
             this.prev=null;
         }
     }
+
     Node head=null;
     Node tail=null;
-
-    // Function to insert the element in doubly linked list
+    // Function To Insert The Linked List Elements
     public void insert(int data){
         Node newNode=new Node(data);
         if(head==null){
@@ -31,34 +32,41 @@ public class DeleteAtSpecific {
         }
     }
     
-    // Function to delete the specific position element of doubly linked list
-    public void deleteAtSpecific(int index){
+    // Function To Delete The Element At Specific Position
+    @SuppressWarnings("UnnecessaryReturnStatement")
+    public void deleteAtSpecific(int position){
         if(head==null){
-            System.out.println("Empty Linked List!!!");
-        }
-        else if(index==0){
-            head=head.next;
-            if(head!=null){
-                head.prev=null;
-            }
-        }
-        else{
+            System.out.println("Empty Doubly Linked List!!!");
+            return;
+        }else{
+            Node current=head;
             int count=1;
-            Node temp=head;
-            while(temp!=null){
-                if(count==index-1){
-                    temp=temp.next;
+            while(current!=null && count<=position){
+                if(count==position){
+                    if(current==head){
+                        head=head.next;
+                        if(head!=null){
+                            head.prev=null;
+                        }
+                    }else if(current == tail){
+                        tail=tail.prev;
+                        tail.next=null;
+                    }else{
+                        current.prev.next=current.next;
+                        current.next.prev=current.prev;
+                    }
+                    break;
                 }
+                current=current.next;
                 count++;
-                temp=temp.next;
             }
         }
     }
     
-    // Function to display the linked list
+    // Function To Display The Doubly Linked List
     public void display(){
         if(head==null){
-            System.out.println("Empty Doubly Linked L;ist!!!");
+            System.out.println("Empty Linked List!!!");
         }else{
             Node temp=head;
             while(temp!=null){
@@ -66,7 +74,6 @@ public class DeleteAtSpecific {
                 temp=temp.next;
             }
             System.out.println("null");
-            System.out.println();
         }
     }
 
@@ -77,19 +84,17 @@ public class DeleteAtSpecific {
         System.out.print("Enter number of terms: ");
         int n=sc.nextInt();
         System.out.print("Enter Elements: ");
-        for (int i=0;i<n;i++) {
+        for (int i = 0; i < n; i++) {
             int value=sc.nextInt();
             list.insert(value);
         }
-        System.out.print("Original Doubly Linked List: ");
-        // Display The Doubly Linked List
+        System.out.print("Original Linked List: ");
+        // Diplay The Original Linked List
         list.display();
-        
-        System.out.print("Enter Position For Deletion The Element: ");
-        int index=sc.nextInt();
-        list.deleteAtSpecific(index);
-        System.out.print("After Delete The Specific Position Element Of Doubly Linked List: ");
-        // Display The Doubly Linked List
+        System.out.print("Enter Position To Delete Element: ");
+        int position=sc.nextInt();
+        list.deleteAtSpecific(position);
+        System.out.print("After Deletion At Specific Position: ");
         list.display();
     }
 }

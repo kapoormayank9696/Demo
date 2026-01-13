@@ -48,9 +48,9 @@ public class LinkedListSorting{
                 current=current.next;
             }
         }while(swapped);
-        }
-        // Display Function of Singly Linked List
-        public void display(){
+    }
+    // Display Function of Singly Linked List
+    public void display(){
         if(head==null){
             System.out.println("Empty List");
         }else{
