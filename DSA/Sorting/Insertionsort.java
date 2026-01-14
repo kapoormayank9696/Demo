@@ -6,7 +6,7 @@ public class Insertionsort {
         System.out.println("Before Sorting an array");
         printArray(arr);
         System.out.println("After Sorting an Array Using Insertion Sort");
-        Insertionsort(arr);
+        Insertion_sort(arr);
         printArray(arr);
     }
     public static void printArray(int[] arr){
@@ -15,7 +15,7 @@ public class Insertionsort {
         }
         System.out.println();
     }
-    public static void Insertionsort(int[] arr){
+    public static void Insertion_sort(int[] arr){
         int n=arr.length;
         for(int i=1;i<n-1;i++){
             int k=arr[i];

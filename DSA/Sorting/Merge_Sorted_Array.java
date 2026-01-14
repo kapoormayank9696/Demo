@@ -1,64 +1,77 @@
-// Merge two sorted arrays into another sorted array 
+// Merge Sort implementation in Java
 
 import java.util.Scanner;
-public class Merge_Sorted_Array {
-
-    // Function to print an array
-    public static void printArray(int[] arr){
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+public class  Merge_Sorted_Array{
+    
+    // Function To Display the array
+    public static void printArray(int[] nums){
+        for(int i=0;i<nums.length;i++){
+            System.out.print(nums[i]+" ");
         }
         System.out.println("\n");
     }
+
+    // Function to merge one unsorted array
+    public static void mergeSort(int[] nums,int first,int last){
+        if(first<last){
+            int mid=(first+last)/2;
+            System.out.println(mid);
+            mergeSort(nums, first, mid); // Left half sorting
+            mergeSort(nums, mid+1, last); // Right half sorting
+            merge(nums, first, mid, last); // Merging both halves
+        }
+    }
     
-    // Function of two sorted array
-    public static int[] mergeSortArray(int[] arr1,int[] arr2){
-        int p=arr1.length-1;
-        int q=arr2.length-1;
-        int r=arr1.length+arr2.length;
-        int[] num=new int[r];
-        int i=0,j=0,k=0;
-        while(i<=p && j<=q){
-            if(arr1[i]<arr2[j]){
-                num[k++]=arr1[i++];
+    // Function to merge two sorted halves
+    public static void merge(int[] nums,int first,int mid,int last){
+        int n1=mid-first+1;
+        int n2=last-mid;
+        int[] left=new int[n1];
+        int[] right=new int[n2];
+        for(int i=0;i<n1;i++){
+            left[i]=nums[first+i];
+        }
+        for(int j=0;j<n2;j++){
+            right[j]=nums[mid+1+j];
+        }
+        int i=0,j=0;
+        int k=first;
+        while(i<n1 && j<n2){
+            if(left[i]<=right[j]){
+                nums[k]=left[i];
+                i++;
             }else{
-                num[k++]=arr2[j++];
+                nums[k]=right[j];
+                j++;
             }
+            k++;
         }
-        while(i<=p){
-            num[k++]=arr1[i++];
+        while(i<n1){
+            nums[k]=left[i];
+            i++;
+            k++;
         }
-        while(j<=q){
-            num[k++]=arr2[j++];
+        while(j<n2){
+            nums[k]=right[j];
+            j++;
+            k++;
         }
-        return num; // Return the merged array
+        System.out.print("After Merging: ");
+        printArray(nums);
     }
 
     // Main function
-   public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    System.out.print("Enter number of terms: ");
-    int n=sc.nextInt();
-    int[] nums=new int[n];
-    System.out.print("Enter Elements of first sorted array: ");
-    for (int i = 0; i < n; i++) {
-        nums[i]=sc.nextInt();
+    public static void main(String[] args) {
+        System.out.print("Enter number of terms: ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] nums=new int[n];
+        System.out.print("Enter Elemnts: ");
+        for(int i=0;i<n;i++){
+            nums[i]=sc.nextInt();
+        }
+        System.out.print("Original Array: ");
+        printArray(nums);
+        mergeSort(nums,0, nums.length-1);
     }
-    System.out.print("Enter number of terms in second sorted array: ");
-    int m=sc.nextInt();
-    int[] nums2=new int[m];
-    System.out.print("Enter Elements of second sorted array: ");
-    for (int i = 0; i < m; i++) {
-        nums2[i]=sc.nextInt();
-    }
-    System.out.println("First Array: ");
-    // Printing the first array
-    printArray(nums);
-    System.out.println("Second Array: ");
-    printArray(nums2);
-    int[] result=mergeSortArray(nums, nums2);
-    System.out.println("Merged Sorted Array: ");
-    // Printing the merged sorted array
-    printArray(result);
-   } 
 }

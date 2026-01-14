@@ -29,6 +29,37 @@ public class InsertionSort {
         }
     }
 
+    // Function to sort the singly linked list from insertion sort
+    public void insertionSort(){
+        if(head==null || head.next==null){
+            return;
+        }else{
+            Node sorted=null;
+            Node current=head;
+            while(current!=null){
+                Node next=current.next;
+                sortedInsert(current,sorted);
+                current=next;
+            }
+            head=sorted;
+        }
+    }
+
+    // Function to insert the node in sorted way
+    public void sortedInsert(Node newNode,Node sorted){
+        if(sorted==null || sorted.data>=newNode.data){
+            newNode.next=sorted;
+            sorted=newNode;
+        }else{
+            Node current=sorted;
+            while(current.next!=null && current.next.data<newNode.data){
+                current=current.next;
+            }
+            newNode.next=current.next;
+            current.next=newNode;
+        }
+    }
+    
     // Function to display the linked list
     public void display(){
         if(head==null){
