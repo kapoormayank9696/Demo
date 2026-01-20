@@ -44,6 +44,54 @@ This repository covers core Java concepts such as OOP, exception handling, colle
     - Car Booking
     - Other small Java projects
 
+  ---
+
+## ✅ DSA Concepts Covered
+
+📊 Arrays
+
+🔗 Linked List (Singly / Doubly)
+
+📚 Stack
+
+🧺 Queue
+
+🌳 Trees (Binary Tree, BST)
+
+🕸️ Graphs (Basic Representation)
+
+🔍 Searching Algorithms
+
+   - Linear Search/ Sequential Search
+
+   -  Binary Search
+
+📐 Sorting Algorithms
+
+   - Bubble Sort
+
+   - Selection Sort
+
+   - Insertion Sort
+
+   - Merge Sort
+
+   - Quick Sort
+
+   - Counting Sort
+
+   - Radix Sort
+
+   - Shell Sort
+
+   - Bucket Sort
+
+   - Heap Sort
+
+🧠 Recursion
+
+⏱️ Time & Space Complexity (Basics)
+
 ---
 
 ## 📁 Folder Structure
