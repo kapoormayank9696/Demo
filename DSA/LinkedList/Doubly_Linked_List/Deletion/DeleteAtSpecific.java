@@ -56,9 +56,9 @@ public class DeleteAtSpecific{
                         current.next.prev=current.prev;
                     }
                     break;
-                }
-                current=current.next;
-                count++;
+            }
+            current=current.next;
+            count++;
             }
         }
     }

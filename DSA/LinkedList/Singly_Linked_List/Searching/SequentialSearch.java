@@ -30,7 +30,7 @@ public class SequentialSearch {
     }
 
     // Linear Search and return the position of target element
-    public int linearsearch(int target){
+    public int linearSearch(int target){
         if(head==null){
             System.out.println("Empty linked list!!!");
         }else{
@@ -47,9 +47,11 @@ public class SequentialSearch {
         return -1;
     }
     // Display Function of Singly Linked List
+    @SuppressWarnings("UnnecessaryReturnStatement")
     public void display(){
         if(head==null){
             System.out.println("Empty Linked List!!!");
+            return;
         }else{
             Node temp=head;
             while(temp!=null){
@@ -61,6 +63,7 @@ public class SequentialSearch {
     }
 
     // Main function
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         SequentialSearch list=new SequentialSearch();
         Scanner sc=new Scanner(System.in);
@@ -78,12 +81,13 @@ public class SequentialSearch {
         // Take user target element for searching from linked list
         System.out.print("Enter a target: ");
         int target=sc.nextInt();
-        int result=list.linearsearch(target);
+        int result=list.linearSearch(target);
         if(result!=-1){
             System.out.println("Target element exist into the singly linked list at position: "+result);
         }
         else{
             System.out.println("Target element not exist in singly linked list!!!");
         }
+        sc.close();
     }
 }
