@@ -15,7 +15,6 @@ public class  Merge_Sorted_Array{
     public static void mergeSort(int[] nums,int first,int last){
         if(first<last){
             int mid=(first+last)/2;
-            System.out.println(mid);
             mergeSort(nums, first, mid); // Left half sorting
             mergeSort(nums, mid+1, last); // Right half sorting
             merge(nums, first, mid, last); // Merging both halves
@@ -56,10 +55,8 @@ public class  Merge_Sorted_Array{
             j++;
             k++;
         }
-        System.out.print("After Merging: ");
-        printArray(nums);
     }
-
+    
     // Main function
     public static void main(String[] args) {
         System.out.print("Enter number of terms: ");
@@ -73,5 +70,7 @@ public class  Merge_Sorted_Array{
         System.out.print("Original Array: ");
         printArray(nums);
         mergeSort(nums,0, nums.length-1);
+        System.out.print("After Merging: ");
+        printArray(nums);
     }
 }
