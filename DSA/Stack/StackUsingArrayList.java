@@ -9,10 +9,9 @@ public class StackUsingArrayList {
         // Method of ArrayList
         ArrayList<Integer> list=new ArrayList<>();
 
-        // Empty function which check stack is empty or not
+        // Empty function which check stack is an empty or not
         public boolean isEmpty(){
-            int k=list.size();
-            return k == 0;
+            return list.isEmpty();
         }
 
         // Push operation

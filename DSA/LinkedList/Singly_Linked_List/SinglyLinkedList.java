@@ -1,15 +1,21 @@
 // Java Demonstrate The Singly Linked List
+
 public class SinglyLinkedList {
+
     // Node class to represent each element in the Singly Linked List
     class Node{
+        // Default Access Modifier And Data Memebers
         int data;
         Node next;
+        // Parameterized Constructor
         public Node(int data){
             this.data = data;
             this.next = null;
         }
     }    
     Node head = null;
+
+    // Method to insert the elements in linked list
     public void insert(int data)
     {
         Node newNode = new Node(data);
@@ -25,7 +31,9 @@ public class SinglyLinkedList {
             temp.next = newNode;
         }
     }
-    public void insertatbeging(int val){
+
+    // Method to insert the node at beginning position
+    public void insertAtBeginning(int val){
         Node newNode = new Node(val);
         if(head == null){
             head = newNode;
@@ -34,7 +42,8 @@ public class SinglyLinkedList {
             head = newNode;
         }
     }
-    public void insertatend(int val){
+    // Method to insert the node at end position
+    public void insertAtEnd(int val){
         Node newNode = new Node(val);
         if(head == null){
             head = newNode;
@@ -46,7 +55,9 @@ public class SinglyLinkedList {
             temp.next = newNode;
         }
     }
-    public void insertatspecificposition(int val,int pos){
+
+    // Method to insert the node at speicifc position
+    public void insertAtSpecific(int val,int pos){
         Node newNode = new Node(val);
         if(pos < 0){
             System.out.println("Invalid position");
@@ -62,19 +73,24 @@ public class SinglyLinkedList {
                 if(count == pos){
                     newNode.next=temp.next;
                     temp.next=newNode;
+                    break;
                 }
                 count++;
                 temp = temp.next;
             }
         }
     }
-    public void delete(){
+
+    // Method to delete the node at beginning position
+    public void deleteAtBeginning(){
         if(head == null){
             System.out.println("Empty linked list");
         }else{
             head = head.next;
         }
     }
+
+    // Method to delete the node at end position
     public void deleteAtEnd(){
         if(head == null){
             System.out.println("empty Linked list");
@@ -89,7 +105,8 @@ public class SinglyLinkedList {
             }
         }
     }
-    // Delete from Specific Position
+
+    // Method to delete the node at specific position
     public void deleteAtSpecific(int index){
         if(index<0){
             System.out.println("Invalid Position!!!");
@@ -108,16 +125,18 @@ public class SinglyLinkedList {
             }
         }
     }
-    // Function to Update At Beginning
-    public void UpdateAtBeginning(int value){
+
+    // Method to update the node at beginning position
+    public void updateAtBeginning(int value){
         if(head == null){
             System.out.println("Empty Linked List!!!");
         }else{
             head.data = value;
         }
     }
-    // Function to Update At End
-    public void UpdateAtEnd(int value){
+
+    // Method to update the node at end position
+    public void updateAtEnd(int value){
         if(head == null){
             System.out.println("Empty Singly Linked List!!!");
         }else{
@@ -128,8 +147,9 @@ public class SinglyLinkedList {
             temp.data = value;
         }
     }
-    // Function to Update At Specific
-    public void UpdateAtSpecific(int index,int value){
+
+    // Method to delete the node at specificposition
+    public void updateAtSpecific(int index,int value){
         if(index<0){
             System.out.println("Empty Singly Linked List!!!");
         }else if(index==0){
@@ -140,12 +160,15 @@ public class SinglyLinkedList {
             while(temp.next != null){
                 if(count==index){
                     temp.data = value;
+                    break;
                 }
                 temp = temp.next;
                 count++;
             }
         }
     }
+
+    // Method to display the linked list node data
     public void display(){
         Node temp = head;
         while(temp != null)
@@ -155,6 +178,8 @@ public class SinglyLinkedList {
         }
         System.out.println("null");
     }
+
+    // Main function
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
 
@@ -170,23 +195,22 @@ public class SinglyLinkedList {
 
         System.out.print("After Insert Element At Beginng: ");
         // Insert at the beginning
-        list.insertatbeging(85);
+        list.insertAtBeginning(85);
         list.display();
 
         System.out.print("After Insert Element At End: ");
         // Insert at end
-        list.insertatend(58);
+        list.insertAtEnd(58);
         list.display();
 
         System.out.print("After Insert At Specific Position: ");
         // Insert at specific position
-        list.insertatspecificposition(34, 2);
-        list.display();
+        list.insertAtSpecific(34, 2);
         list.display();
 
         System.out.print("After Delet from beginng: ");
         // Delete first element
-        list.delete();
+        list.deleteAtBeginning();
         list.display();
 
         System.out.print("After delete from end: ");
@@ -201,15 +225,17 @@ public class SinglyLinkedList {
         
         System.out.print("Update First element : ");
         // Update From Beginning Value
-        list.UpdateAtBeginning(43);
+        list.updateAtBeginning(43);
         list.display();
+        
         // Update From End Value
         System.out.print("Update Last element : ");
-        list.UpdateAtEnd(86);
+        list.updateAtEnd(86);
         list.display();
+        
         // Update From Specific Value
         System.out.print("Update Specific Position element : ");
-        list.UpdateAtSpecific(3, 24);
+        list.updateAtSpecific(3, 24);
         list.display();
     }
 }
