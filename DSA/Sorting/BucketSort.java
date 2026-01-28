@@ -2,9 +2,35 @@
 
 import java.util.Scanner;
 public class BucketSort {
-    // Method of Bucket Sort Algorithm
-    public static void bucketSort(){}
+    // Method of insertion sort
+    public static void insertionSort(int[] nums){
+        for(int i=1;i<nums.length;i++){
+            int j=i-1;
+            int k=nums[i];
+            while(j >= 0 && nums[j] > k){
+                nums[j+1]=nums[j];
+                j--;
+            }
+            nums[j+1]=k;
+        }
+    }
     
+    // Method of Bucket Sort Algorithm
+    public static void bucketSort(int[] nums){
+        int n=nums.length;
+        if(n <= 0) return;
+        int max=nums[0];
+        // Find maximum value from an array
+        for(int num:nums){
+            if(num > max){
+                max=num;
+            }
+        }
+        int[][] buckets=new int[n][n];
+        int[] bucketsSize=new int[n];
+        
+    }
+
     // Function to print an array
     public static void printArray(int[] nums){
         for(int num:nums){
