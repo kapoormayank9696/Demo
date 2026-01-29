@@ -2,7 +2,8 @@
 
 import java.util.Scanner;
 public class BucketSort {
-    // Method of insertion sort
+
+    // Method of insertion sort algorithm perform
     public static void insertionSort(int[] nums){
         for(int i=1;i<nums.length;i++){
             int j=i-1;
@@ -15,7 +16,7 @@ public class BucketSort {
         }
     }
     
-    // Method of Bucket Sort Algorithm
+    // Method of bucket sort algorithm perform
     public static void bucketSort(int[] nums){
         int n=nums.length;
         if(n <= 0) return;
@@ -28,10 +29,9 @@ public class BucketSort {
         }
         int[][] buckets=new int[n][n];
         int[] bucketsSize=new int[n];
-        
     }
 
-    // Function to print an array
+    // Method to print an array
     public static void printArray(int[] nums){
         for(int num:nums){
             System.out.print(num+" ");

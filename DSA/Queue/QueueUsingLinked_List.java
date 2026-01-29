@@ -77,6 +77,7 @@ public class QueueUsingLinked_List {
     }
 
     // Main function
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         QueueUsingLinked_List queue=new QueueUsingLinked_List();
         Scanner sc=new Scanner(System.in);
