@@ -21,10 +21,15 @@ public class QueueUsingLinked_List {
     Node first=null;
     Node rear=null;
 
+    // Method to check queue is an empty or not
+    public boolean isEmpty(){
+        return first==null;
+    }
+
     // Method to insert the elements in queue
     public void enqueue(int data){
         Node newNode=new Node(data);
-        if(first == null){
+        if(isEmpty()){
             first = rear = newNode;
         }else{
             rear.next=newNode;
@@ -33,21 +38,14 @@ public class QueueUsingLinked_List {
     }
 
     // Method to dequeue the element in queue
-    public void dequeue(){
+    public int dequeue(){
         if(isEmpty()){
            System.out.println("Queue is an empty!!!");
-           return;
+           return -1;
         }
-
-        first=first.next; 
-        if(first == null){
-            rear=null;
-        }
-    }
-
-    // Method to check queue is an empty or not
-    public boolean isEmpty(){
-        return first==null;
+        int k=first.data;
+        first=first.next;
+        return k; 
     }
 
     // Method to find the peek element data
@@ -56,7 +54,8 @@ public class QueueUsingLinked_List {
             System.out.println("Queue is an empty!!!");
             return -1;
         }
-        return first.data;
+        int k=first.data;
+        return k;
     }
 
     // Method to display the queue data
@@ -89,11 +88,14 @@ public class QueueUsingLinked_List {
             queue.enqueue(value);
         }
         System.out.print("Display the queue data: ");
+        // Call the display method to print queue elements
         queue.display();
-        System.out.print("Front element: "+queue.peek());
-        queue.dequeue();
-        System.out.print("After dequeue: ");
+        System.out.println("Top queue element: "+queue.peek());
+        System.out.println("Popped element: "+queue.dequeue());
+        System.out.print("After popped the queue: ");
+        // Call the display method to print queue elements
         queue.display();
+        System.out.println("New top queue element: "+queue.peek());
         sc.close();
     }
 }

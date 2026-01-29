@@ -15,6 +15,12 @@ public class StackUsingLinked_List {
     }
     
     Node top=null;
+
+    // Method to check stack is empty or not
+    public boolean isEmpty(){
+        return top == null;
+    }
+
     // Method to insert the value in stack
     public void push(int data){
         Node newNode=new Node(data);
@@ -23,27 +29,24 @@ public class StackUsingLinked_List {
     }
 
     // Method of pop operation
-    public void pop(){
-        if(top==null){
-            System.out.println("Stack Underflow!!!");
-        }else{
-            System.out.println("Popped Element From Stack: "+top.data);
-            top=top.next;
+    public int pop(){
+        if(isEmpty()){
+            System.out.println("Stack is an empty!!!");
+            return -1;
         }
+        int k=top.data;
+        top=top.next;
+        return k;
     }
 
     // Method of peek operation
-    public void peek(){
-        if(top==null){
+    public int peek(){
+        if(isEmpty()){
             System.out.println("Stack is Empty!!!");
-        }else{
-            System.out.println("Top element: "+top.data);
+            return -1;
         }
-    }
-
-    // Method to check stack is empty or not
-    public boolean isEmpty(){
-        return top==null;
+        int k=top.data;
+        return k;
     }
 
     // Function to display the stack data
@@ -53,10 +56,13 @@ public class StackUsingLinked_List {
         }else{
             Node current=top;
             while(current!=null){
-                System.out.print(current.data+"-->");
+                System.out.print(current.data);
+                if(current.next != null){
+                    System.out.print("-->");
+                }
                 current=current.next;
             }
-            System.out.println("null");
+            System.out.println();
         }
     }
 
@@ -75,16 +81,12 @@ public class StackUsingLinked_List {
         System.out.print("Stack data display: ");
         // Call to display method
         list.display();
-        // Call pop operation method
-        list.pop();
-        System.out.print("After Pop From Stack: ");
+        System.out.println("Top stack element: "+list.peek());
+        System.out.println("Popped the stack element: "+list.pop());
+        System.out.print("After popped the stack element: ");
         // Call to display method
         list.display();
-        // Call the peek operation method
-        list.peek();
-        // Check stack is empty or not
-        boolean result=list.isEmpty();
-        System.out.print("Stack is Empty : "+result);
+        System.out.print("New top stack element: "+list.peek());
         sc.close();
     }
 }

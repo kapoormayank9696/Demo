@@ -56,6 +56,8 @@ public class QueueUsingArrayList {
         System.out.println("Display the queue data: "+queue.toString());
         System.out.println("Top queue element: "+queue.peek());
         System.out.println("Popped element: "+queue.dequeue());
+        System.out.println("After popped the queue: "+queue.toString());
+        System.out.println("New top queue element: "+queue.peek());
         sc.close();
     }
 }

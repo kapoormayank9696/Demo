@@ -38,30 +38,28 @@ public class StackUsingArrayList {
         }
 
         // Method of display the stack
-        public void display(){
-            if(isEmpty()){
-                System.out.print("Stack is empty!!!");
-            }else{
-                System.out.println("Stack elements: "+list);
-            }
+        @Override
+        public String toString(){
+            return list.toString();
         }
     }
 
     // Main function
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args){
-        Stack s=new Stack();
+        Stack stack=new Stack();
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter number of terms: ");
         int n=sc.nextInt();
         System.out.print("Enter elements: ");
         for(int i=0;i<n;i++){
-            s.push(sc.nextInt());
+            stack.push(sc.nextInt());
         }
-        s.display();
-        System.out.println("Top element: "+s.peek());
-        System.out.println("Popped element: "+s.pop());
-        System.out.println("New top element: "+s.peek());
+        System.out.println("Display the stack data: "+stack.toString());
+        System.out.println("Top element: "+stack.peek());
+        System.out.println("Popped element: "+stack.pop());
+        System.out.println("After popped stack element: "+stack.toString());
+        System.out.println("New top element: "+stack.peek());
         sc.close();
     }
 }

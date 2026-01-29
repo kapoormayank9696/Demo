@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class BucketSort {
 
     // Method of insertion sort algorithm perform
-    public static void insertionSort(int[] nums){
-        for(int i=1;i<nums.length;i++){
+    public static void insertionSort(int[] nums,int size){
+        for(int i=1;i< size;i++){
             int j=i-1;
             int k=nums[i];
             while(j >= 0 && nums[j] > k){
@@ -21,14 +21,38 @@ public class BucketSort {
         int n=nums.length;
         if(n <= 0) return;
         int max=nums[0];
+
         // Find maximum value from an array
         for(int num:nums){
             if(num > max){
                 max=num;
             }
         }
+
+        // Create buckets
         int[][] buckets=new int[n][n];
-        int[] bucketsSize=new int[n];
+        int[] bucketSize=new int[n];
+
+        // Distribute elements into buckets
+        for(int num:nums){
+            int index = (num*n)/(max+1);
+            buckets[index][bucketSize[index]++] = num;
+        }
+
+        // Sort each bucket
+        for(int i=0;i<n;i++){
+            if(bucketSize[i] > 0){
+                insertionSort(buckets[i], bucketSize[i]);
+            }
+        }
+
+        // Merge sorted buckets
+        int k=0;
+        for (int i =0; i < n; i++) {
+            for(int j=0; j<bucketSize[i];j++)  {
+                nums[k++]=buckets[i][j];
+            } 
+        }
     }
 
     // Method to print an array
@@ -52,5 +76,9 @@ public class BucketSort {
         }
         System.out.print("Original Array: ");
         printArray(arr);
+        bucketSort(arr);
+        System.out.print("After sorted an array: ");
+        printArray(arr);
+        sc.close();
     }
 }
