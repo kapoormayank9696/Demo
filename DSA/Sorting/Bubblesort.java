@@ -1,4 +1,6 @@
-// Bubble sort in Java programming Language
+// Bubble Sort Alogrithm Implementation In Java
+
+import java.util.Scanner;
 
 public class Bubblesort {
 
@@ -24,14 +26,26 @@ public class Bubblesort {
         System.out.println();
     }
 
+
     // Main function
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
-        int[] arr={64,34,25,12,22,11,90};
-        System.out.println("Before Sorting an array");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of terms: ");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        System.out.print("Enter elements: ");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Original Array");
         printArray(arr);
-        System.out.println("After Sorting an array using bubble Sort");
+        System.out.print("After Sorting an array using bubble Sort");
         bubbleSort(arr);
         printArray(arr);
+        sc.close();
     }
 }
+
+
 

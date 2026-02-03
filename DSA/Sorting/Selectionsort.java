@@ -1,4 +1,4 @@
-// Selection sort in Java programming Language
+// Selection Sort Algorithm Impelementation In Java
 
 public class Selectionsort {
 

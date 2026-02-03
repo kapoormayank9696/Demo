@@ -1,4 +1,4 @@
-// Insertion sort in Java programming Language
+// Insertion Sort Algorithm Implementation In Java
 
 public class Insertionsort {
     public static void main(String[] args) {
