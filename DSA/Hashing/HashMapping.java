@@ -6,16 +6,15 @@ import java.util.Set;
 public class HashMapping {
 
     // Main function
-    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         HashMap<String,Integer> map = new HashMap<>();
         map.put("India",190);
-        map.put("China", 180);
-        map.put("Russia", 100);
-        map.put("America", 90);
+        map.put("China",180);
+        map.put("Russia",100);
+        map.put("America",90);
         map.put("Irak",72);
-        map.put("Colombia", 80);
-        map.put("Iran", 79);
+        map.put("Colombia",80);
+        map.put("Iran",79);
         map.put("Spain",77);
 
         // Print the hash map
@@ -32,7 +31,7 @@ public class HashMapping {
         System.out.println("Value of exist key in the hash map: "+map.get("India")); // Key exists
         System.out.println("Value of doesn't exist key in the hash map: "+map.get("k")); // key doesn't exists
 
-        // Iteration Operation in hash map (Entery Set Method)
+        // Iteration Operation in hash map (Entry Set Method)
         for(Map.Entry<String,Integer> e : map.entrySet()){
             System.out.print(e.getKey()+"="+ e.getValue()+" ");
         }
