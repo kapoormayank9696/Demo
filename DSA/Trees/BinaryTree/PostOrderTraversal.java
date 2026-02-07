@@ -16,7 +16,7 @@ public class PostOrderTraversal {
         }
     }
 
-    // Method to find the root of Binary Tree(BT)
+    // BinaryTree builder
     static class BinaryTree{
         int index=-1;
         public Node buildTree(int[] nodes){
@@ -36,9 +36,9 @@ public class PostOrderTraversal {
         if(root == null){
             return;
         }
-        postOrder(root.left);
-        System.out.print(root.data+" ");
         postOrder(root.right);
+        System.out.print(root.data+" ");
+        postOrder(root.left);
     }
 
     // Main function
@@ -47,7 +47,7 @@ public class PostOrderTraversal {
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
-        System.out.print("Binary Tree Structure: ");
+        System.out.print("PostOrder Traversal: ");
         postOrder(root);
     }
 }

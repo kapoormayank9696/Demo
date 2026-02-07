@@ -16,7 +16,7 @@ public class InOrderTraversal {
         }
     }
 
-    // Method to find the root of Binary Tree(BT)
+    // BinaryTree builder
     static class BinaryTree{
         int index=-1;
         public Node buildTree(int[] nodes){
@@ -36,9 +36,9 @@ public class InOrderTraversal {
         if(root == null){
             return;
         }
-        InOrder(root.right);
-        System.out.print(root.data+" ");
         InOrder(root.left);
+        System.out.print(root.data+" ");
+        InOrder(root.right);
     }
 
     // Main function
@@ -47,7 +47,7 @@ public class InOrderTraversal {
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
-        System.out.print("Binary Tree Structure: ");
+        System.out.print("InOrder Traversal: ");
         InOrder(root);
     }    
 }

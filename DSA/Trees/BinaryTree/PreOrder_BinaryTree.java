@@ -17,7 +17,7 @@ public class PreOrder_BinaryTree {
         }
     }
 
-    // Method to find the root of Binary Tree by using pre-order 
+    // BinaryTree builder
     static class BinaryTree{
         static int index = -1;
         public Node buildTree(int nodes[]){
@@ -48,7 +48,7 @@ public class PreOrder_BinaryTree {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
-        System.out.print("Binary Tree Structure: ");
+        System.out.print("PreOrder Traversal: ");
         preOrder(root);
     }
 }
