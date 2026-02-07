@@ -36,9 +36,9 @@ public class PostOrderTraversal {
         if(root == null){
             return;
         }
+        postOrder(root.left);
         postOrder(root.right);
         System.out.print(root.data+" ");
-        postOrder(root.left);
     }
 
     // Main function
