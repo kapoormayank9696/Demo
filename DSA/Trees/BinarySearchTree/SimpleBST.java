@@ -1,7 +1,7 @@
 // Simple Binary Search Tree Algorithm Implementation In Java
 
 public class SimpleBST {
-    // Node class
+    // Node class for Binary Search Tree(BST)
     static class Node{
         // Deafult Access Modifier And Data Members
         int data;
@@ -17,6 +17,7 @@ public class SimpleBST {
 
     // Main function
     public static void main(String[] args) {
+        // Call the BST(Node)
         Node root=new Node(23);
         root.left=new Node(16);
         root.right=new Node(30);
@@ -32,3 +33,5 @@ public class SimpleBST {
         System.out.println(root.left.left.data+"   "+root.left.right.data+" "+root.right.left.data+" "+root.right.right.data);
     }
 }
+
+
