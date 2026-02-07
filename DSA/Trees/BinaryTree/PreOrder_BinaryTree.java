@@ -48,7 +48,7 @@ public class PreOrder_BinaryTree {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
-        System.out.println("\nBinary Tree Structure: ");
+        System.out.print("Binary Tree Structure: ");
         preOrder(root);
     }
 }
