@@ -32,13 +32,13 @@ public class InOrderTraversal {
     }
 
     // Method to print the values in form of post order traversal
-    public static void InOrder(Node root){
+    public static void inorder(Node root){
         if(root == null){
             return;
         }
-        InOrder(root.left);
+        inorder(root.left);
         System.out.print(root.data+" ");
-        InOrder(root.right);
+        inorder(root.right);
     }
 
     // Main function
@@ -48,6 +48,6 @@ public class InOrderTraversal {
         Node root=tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
         System.out.print("InOrder Traversal: ");
-        InOrder(root);
+        inorder(root);
     }    
 }

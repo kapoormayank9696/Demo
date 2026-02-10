@@ -1,8 +1,8 @@
-// PostOrder Traversal Algorithm Implementation In Java
+// Sum of Nodes Binary Tree Algorithm Implementation In Java
 
-public class PostOrderTraversal {
-    
-    // Node class
+public class Sum_Of_Nodes {
+    // Node class of Binary Tree
+    @SuppressWarnings("unused")
     static class Node{
         // Deafult Access Modifier And Data Members
         int data;
@@ -16,7 +16,7 @@ public class PostOrderTraversal {
         }
     }
 
-    // BinaryTree builder
+    // class to find the root of Binary Tree(BT)
     static class BinaryTree{
         int index=-1;
         public Node buildTree(int[] nodes){
@@ -24,31 +24,29 @@ public class PostOrderTraversal {
             if(nodes[index] == -1){
                 return null;
             }
-            Node newNode=new Node(nodes[index]);
+            Node newNode =new Node(nodes[index]);
             newNode.left=buildTree(nodes);
             newNode.right=buildTree(nodes);
             return newNode;
         }
     }
 
-    // Method to print the values in form of post order traversal
-    public static void postOrder(Node root){
+    // Method to find the sum of Binary Tree nodes
+    public static int sumOfNodes(Node root){
         if(root == null){
-            return;
+            return 0;
         }
-        postOrder(root.left);
-        postOrder(root.right);
-        System.out.print(root.data+" ");
+        int leftSum=sumOfNodes(root.left);
+        int rightSum=sumOfNodes(root.right);
+        return leftSum + rightSum + root.data;
     }
-
+    
     // Main function
     public static void main(String[] args) {
         int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
-        System.out.println("Root value of Binary Tree(BT): "+root.data);
-        System.out.print("PostOrder Traversal: ");
-        postOrder(root);
+        System.out.println("Root of Binary Tree(BT): "+root.data);
+        System.out.println("Sum of nodes is: "+sumOfNodes(root));
     }
 }
-

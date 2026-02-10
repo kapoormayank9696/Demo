@@ -33,13 +33,13 @@ public class PreOrder_BinaryTree {
     }
 
     // Method to print the Binary Tree(BT) values
-    public static void preOrder (Node root){
+    public static void preorder (Node root){
         if(root == null){
             return;
         }
         System.out.print(root.data+" ");
-        preOrder(root.left);
-        preOrder(root.right);
+        preorder(root.left);
+        preorder(root.right);
     }
 
     // Main function
@@ -49,6 +49,6 @@ public class PreOrder_BinaryTree {
         Node root = tree.buildTree(nodes);
         System.out.println("Root value of Binary Tree(BT): "+root.data);
         System.out.print("PreOrder Traversal: ");
-        preOrder(root);
+        preorder(root);
     }
 }
