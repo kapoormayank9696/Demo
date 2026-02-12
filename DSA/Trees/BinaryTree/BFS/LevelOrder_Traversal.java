@@ -34,7 +34,7 @@ public class LevelOrder_Traversal {
     }
 
     // Method of level order traversal
-    public static void levelOrder(Node root){
+    public static void levelOrder (Node root){
         if(root == null){
             return;
         }
