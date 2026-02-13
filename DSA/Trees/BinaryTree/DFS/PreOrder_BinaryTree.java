@@ -4,7 +4,7 @@ public class PreOrder_BinaryTree {
     
     // Node class
     @SuppressWarnings("unused")
-    static class Node{
+    public static class Node{
         // Default Access Modifier And Data Members
         int data;
         Node left;

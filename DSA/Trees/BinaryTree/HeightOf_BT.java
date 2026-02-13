@@ -4,7 +4,7 @@ public class HeightOf_BT {
 
     // Node class of Binary Tree
     @SuppressWarnings("unused")
-    static class Node{
+    public static class Node{
         // Default Access Modifier And Data Members
         int data;
         Node left;

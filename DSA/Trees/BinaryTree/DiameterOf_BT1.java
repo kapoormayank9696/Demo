@@ -5,7 +5,7 @@ public class DiameterOf_BT1 {
 
     // class node of Binary Tree
     @SuppressWarnings("unused")
-    static class Node{
+    public static class Node{
         // Default Access Modifier and Data Memebers
         int data;
         Node left;

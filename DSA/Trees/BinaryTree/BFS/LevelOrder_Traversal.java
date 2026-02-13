@@ -5,7 +5,7 @@ import java.util.Queue;
 public class LevelOrder_Traversal {
     // Node class
     @SuppressWarnings("unused")
-    static class Node{
+    public static class Node{
         // Deafult Access Modifier And Data Members
         int data;
         Node left;

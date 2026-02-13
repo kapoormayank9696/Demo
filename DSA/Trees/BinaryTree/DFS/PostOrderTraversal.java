@@ -3,7 +3,7 @@
 public class PostOrderTraversal {
     
     // Node class
-    static class Node{
+    public static class Node{
         // Deafult Access Modifier And Data Members
         int data;
         Node left;

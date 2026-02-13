@@ -5,7 +5,7 @@ public class DiameterOf_BT2 {
     
     // Node class
     @SuppressWarnings("unused")
-    static class Node{
+    public static class Node{
         // Default Access Modifier And Data Members
         int data;
         Node left;
@@ -36,7 +36,7 @@ public class DiameterOf_BT2 {
 
     // class to store the height, diameter of Binary Tree(BT)
     @SuppressWarnings("unused")
-    static class TreeInfo{
+    public static class TreeInfo{
         // Deafult Access Modifier And Data Members
         int height;
         int diameter;
