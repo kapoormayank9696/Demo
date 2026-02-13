@@ -1,9 +1,7 @@
 // Singly Linked List Implementation in Java
-
 // Time Complexity O(1)
 
 import java.util.Scanner;
-
 public class InsertAtBeginng {
 
     // Node class to represent each element in the Singly Linked List
