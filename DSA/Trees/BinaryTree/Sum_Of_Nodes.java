@@ -21,7 +21,7 @@ public class Sum_Of_Nodes {
         int index=-1;
         public Node buildTree(int[] nodes){
             index++;
-            if(nodes[index] == -1){
+            if(index >= nodes.length || nodes[index] == -1){
                 return null;
             }
             Node newNode =new Node(nodes[index]);

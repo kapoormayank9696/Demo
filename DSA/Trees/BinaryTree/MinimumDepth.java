@@ -1,7 +1,5 @@
-// Height Of Binary Tree Algorithm Implementation In Java
-
-public class HeightOf_BT {
-
+// Minimum Depth Of Binary Tree Algorithm Implementation In Java
+public class MinimumDepth {
     // Node class of Binary Tree
     @SuppressWarnings("unused")
     public static class Node{
@@ -33,23 +31,29 @@ public class HeightOf_BT {
         }
     }
 
-    // Method to find the Height of Binary Tree
+    // Method to find the Minimum Depth of Binary Tree
     public static int height(Node root){
         if(root == null){
             return 0;
         }
         int leftheight=height(root.left);
         int rightheight=height(root.right);
-        int myHeight=Math.max(leftheight,rightheight)+1;
-        return myHeight;
+
+        if(root.left == null){
+            return rightheight+1;
+        }
+        if(root.right == null){
+            return leftheight+1;
+        }
+        return Math.min(leftheight,rightheight)+1;
     }
 
     // Main function
     public static void main(String[] args) {
-        int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int[] nodes={3,9,20,-1,-1,15,7};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
         System.out.println("Root of Binary Tree(BT) is: "+root.data);
-        System.out.println("Height of Binary Tree(BT): "+height(root));
+        System.out.println("Minimum Depth of Binary Tree(BT): "+height(root));
     }
 }

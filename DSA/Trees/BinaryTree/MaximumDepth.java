@@ -1,12 +1,9 @@
-// Count ogf Nodes Algorithm Implementation In Java
-// Time Complexity 0(n)
-
-public class Count_Of_Nodes{
-
-    // Node class of Binary Tree(BT)
+// Maximum Depth/Height Of Binary Tree Algorithm Implementation In Java
+public class MaximumDepth {
+    // Node class of Binary Tree
     @SuppressWarnings("unused")
     public static class Node{
-        // Deafult Access Modifier And Data Members
+        // Default Access Modifier And Data Members
         int data;
         Node left;
         Node right;
@@ -18,7 +15,7 @@ public class Count_Of_Nodes{
         }
     }
 
-    // class of Binary Tree to find the root of BT
+    // class to find the root of Binary Tree(BT)
     static class BinaryTree{
         int index=-1;
         public Node buildTree(int[] nodes){
@@ -26,30 +23,31 @@ public class Count_Of_Nodes{
             if(index >= nodes.length || nodes[index] == -1){
                 return null;
             }
-            Node newNode = new Node(nodes[index]);
+            Node newNode =new Node(nodes[index]);
+            // Recursive Functions
             newNode.left=buildTree(nodes);
             newNode.right=buildTree(nodes);
             return newNode;
         }
     }
 
-    // Method to count the number of nodes
-    public static int countOfNodes(Node root){
+    // Method to find the Maximum Depth/Height of Binary Tree
+    public static int height(Node root){
         if(root == null){
             return 0;
         }
-        int leftNodes = countOfNodes(root.left);
-        int rightNodes = countOfNodes(root.right);
-        return leftNodes+ rightNodes +1;
+        int leftheight=height(root.left);
+        int rightheight=height(root.right);
+        int myHeight=Math.max(leftheight,rightheight)+1;
+        return myHeight;
     }
 
     // Main function
     public static void main(String[] args) {
-        int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int[] nodes={3,9,20,-1,-1,15,7};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
-        System.out.println("Root of Binary Tree(BT): "+root.data);
-        System.out.println("Number of nodes in Binary Tree(BT): "+countOfNodes(root));
+        System.out.println("Root of Binary Tree(BT) is: "+root.data);
+        System.out.println("Maximum Depth/Height of Binary Tree(BT): "+height(root));
     }
 }
-
