@@ -44,7 +44,7 @@ public class MaximumDepth {
 
     // Main function
     public static void main(String[] args) {
-        int[] nodes={3,9,20,-1,-1,15,7};
+        int[] nodes={3,9,-1,-1,20,15,-1,-1,7,-1,-1};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
         System.out.println("Root of Binary Tree(BT) is: "+root.data);
