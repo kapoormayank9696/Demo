@@ -52,16 +52,20 @@ public class DiameterOf_BT2 {
         if(root == null){
             return new TreeInfo(0,0);
         }
+        // Recursive function
         TreeInfo left = diameter(root.left);
         TreeInfo right = diameter(root.right);
+        // Height of Binary Tree(BT) is: 1+ maximum of left and right height
         int myHeight = Math.max(left.height, right.height)+1;
 
+        // Diameter of Binary Tree(BT) is: maximum of left diameter, right diameter and left height + right height + 1
         int diam1 = left.diameter;
         int diam2 = right.diameter;
         int diam3 = left.height + right.height + 1;
         int mydiam=Math.max(Math.max(diam1,diam2), diam3);
 
         TreeInfo myInfo=new TreeInfo(myHeight, mydiam);
+        // return the height and diameter of Binary Tree(BT)
         return myInfo;
     }
     
