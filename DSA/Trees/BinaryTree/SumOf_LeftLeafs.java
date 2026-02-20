@@ -42,7 +42,7 @@ public class SumOf_LeftLeafs {
             sum += root.left.data;
         }
         // Recursive function
-        return sum+sumOfLeafs(root.left) + sumOfLeafs(root.right);
+        return sum + sumOfLeafs(root.left) + sumOfLeafs(root.right);
     }
 
     // Main function
