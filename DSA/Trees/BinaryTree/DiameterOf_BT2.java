@@ -21,7 +21,7 @@ public class DiameterOf_BT2 {
     // class to find the root of Binary Tree(BT)
     static class BinaryTree{
         int index=-1;
-        public Node buildTree(int[] nodes){
+        public Node buildTree(int[] nodes) {
             index++;
             if(index >= nodes.length || nodes[index] == -1){
                 return null;
