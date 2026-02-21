@@ -94,6 +94,9 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
+## LeetCode Problems Solution In Java
+---
+
 ## 📁 Folder Structure
 Java programming codes
 -  AbstractClasses/
