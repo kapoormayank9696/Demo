@@ -1,5 +1,7 @@
 // LeetCode Problem 199: Binary Tree Right Side View
 
+import java.util.ArrayList;
+import java.util.List;
 public class Solution199{
     // Node class of Binary Tree(BT)
     @SuppressWarnings("unused")
@@ -34,21 +36,31 @@ public class Solution199{
     }
 
     // Function to find the right side view of Binary Tree(BT)
-    public static void rightSideView(TreeNode root) {
-        if (root == null) {
+    public static List<Integer> rightSideView(TreeNode root) {
+        List<Integer> list=new ArrayList<>();
+        rightOrder(root,list,0);
+        return list;
+    }
+    
+    // Recursive function to find the right side view of Binary Tree(BT)
+    public static void rightOrder(TreeNode root,List<Integer> list,int level){
+        if(root == null){
             return;
         }
-        // Recursive function
-        System.out.print(root.val + " ");
-        rightSideView(root.right); // for right side of Binary Tree
+        if(level == list.size()){
+            list.add(root.val);
+        }
+        rightOrder(root.right,list,level+1);
+        rightOrder(root.left, list, level + 1);
     }
+    
+    // Main function
     public static void main(String[] args) {
         int[] nodes={5,3,1,-1,-1,4,-1,-1,7,6,-1,-1,8,-1,-1};
         BinaryTree tree=new BinaryTree();
         TreeNode root=tree.buildTree(nodes);
         System.out.println("Root of the Binary Tree is: "+root.val);
-        System.out.print("Right Side View of Binary Tree is: ");
-        rightSideView(root);
+        System.out.print("Right Side View of Binary Tree is: "+rightSideView(root));
     }
 }
 
