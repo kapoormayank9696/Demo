@@ -33,7 +33,7 @@ public class Solution257{
             return newNode;
         }
     }
-
+    
     // Function To Find All Paths From Root To Leaf Nodes
     public static List<String> binaryTreePaths(TreeNode root) {
         List<String> list=new ArrayList<>();
