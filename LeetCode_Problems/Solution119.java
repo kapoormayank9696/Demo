@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class Solution119 {
+    // Function to get the kth row of Pascal's Triangle
     public static List<Integer> getRow(int rowIndex) {
         List<Integer> list=new ArrayList<>();
         long c=1;
