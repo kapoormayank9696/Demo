@@ -1,7 +1,7 @@
-// Sum of all leafs Nodes Algorithm Implementation In Java
+// Sum of all left leafs Nodes Algorithm Implementation In Java
 // Time complexity: O(n)
 // Space complexity: O(h)
-public class SumOf_LeafsNode {
+public class SumOfLeft_LeafsNodes {
     // Node class of Binary Search Tree(BST)
     public static class Node{
         // Default Access Modifier And Data Members
@@ -33,14 +33,15 @@ public class SumOf_LeafsNode {
     }
 
     // Function to perform th sum of all nodes of BST
-    public static int sumOfLeafsNodes(Node root) {
+    public static int sumOfLeftNodes(Node root) {
         if(root == null){
             return 0;
         }
-        if(root.left == null && root.right == null) {
-            return root.data;
+        int sum=0;
+        if(root.left != null && root.left.left == null && root.left.right == null) {
+            sum=sum+root.left.data;
         }
-        return sumOfLeafsNodes(root.left)+sumOfLeafsNodes(root.right);
+        return sum + sumOfLeftNodes(root.left)+sumOfLeftNodes(root.right);
     }
 
     // Function to print the BST nodes
@@ -62,6 +63,6 @@ public class SumOf_LeafsNode {
         }
         System.out.print("Print Nodes of Binary Search Tree(BST): ");
         print(root);
-        System.out.println("\nSum of all leafs nodes of Binary Search Tree(BST): "+sumOfLeafsNodes(root));
+        System.out.println("\nSum of all left leafs nodes of Binary Search Tree(BST): "+sumOfLeftNodes(root));
     }
 }
