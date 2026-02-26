@@ -1,4 +1,4 @@
-// Sum of Nodes Binary Tree Algorithm Implementation In Java
+// Sum of all Nodes Binary Tree Algorithm Implementation In Java
 
 public class Sum_Of_Nodes {
     // Node class of Binary Tree
@@ -47,6 +47,6 @@ public class Sum_Of_Nodes {
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
         System.out.println("Root of Binary Tree(BT): "+root.data);
-        System.out.println("Sum of nodes is: "+sumOfNodes(root));
+        System.out.println("Sum of all nodes of Binary Tree(BT): "+sumOfNodes(root));
     }
 }

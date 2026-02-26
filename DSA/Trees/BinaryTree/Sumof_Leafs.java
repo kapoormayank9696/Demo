@@ -1,4 +1,4 @@
-// Sum of leaf nodes in a binary tree Algorithm Implementation In Java
+// Sum of all leaf nodes in a binary tree Algorithm Implementation In Java
 // Time Complexity: O(n) where n is the number of nodes in the
 
 public class Sumof_Leafs {
