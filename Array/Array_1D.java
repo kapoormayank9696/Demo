@@ -13,6 +13,7 @@ public class Array_1D{
         System.out.print("Enter matrix size: ");
         int n=Integer.parseInt(br.readLine());
         int[] arr=new int[n];
+        // Store elements in array
         System.out.print("Enter elements: ");
         for(int i=0;i<n;i++) {
             arr[i]=Integer.parseInt(br.readLine());
