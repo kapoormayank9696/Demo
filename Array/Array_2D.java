@@ -8,6 +8,7 @@ public class Array_2D {
     
     // Main function
     public static void main(String[] args) throws IOException {
+        @SuppressWarnings("unused")
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter number of rows: ");
         int n=Integer.parseInt(br.readLine());
@@ -27,5 +28,6 @@ public class Array_2D {
             }
             System.out.println();
         }
+        br.close();
     }
 }

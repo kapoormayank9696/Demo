@@ -7,8 +7,8 @@ import java.util.Arrays;
 public class Array_1D{
     
     // Main function
-    @SuppressWarnings("ImplicitArrayToString")
     public static void main(String[] args) throws IOException {
+        @SuppressWarnings("unused")
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter matrix size: ");
         int n=Integer.parseInt(br.readLine());
@@ -18,6 +18,7 @@ public class Array_1D{
             arr[i]=Integer.parseInt(br.readLine());
         }
         System.out.println("Print original 1-d array: "+Arrays.toString(arr));
+        br.close();
     }
 }
 
