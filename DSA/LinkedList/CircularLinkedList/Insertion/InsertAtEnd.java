@@ -35,7 +35,7 @@ public class InsertAtEnd {
         newNode.next=head;
     }
 
-    // Functio to insert the node in circular linked list at end point
+    // Function to insert the node in circular linked list at end point
     public void insertAtEnd(int data) {
         Node newNode=new Node(data);
         if(head == null) {
@@ -77,17 +77,17 @@ public class InsertAtEnd {
         System.out.print("Enter number of terms: ");
         int n=Integer.parseInt(br.readLine());
         InsertAtEnd list=new InsertAtEnd();
-        System.out.print("Enter nodes in circular linked list: ");
-        for(int i=0;i < n;i++) {
+        System.out.print("Enter nodes: ");
+        for(int i=0;i<n;i++) {
             int value=Integer.parseInt(br.readLine());
             list.insert(value);
         }
         System.out.print("Display Circular Linked List: ");
         list.display();
-        System.out.print("Enter node element insert at end position: ");
+        System.out.print("Enter node element: ");
         int k=Integer.parseInt(br.readLine());
         list.insertAtEnd(k);
-        System.out.print("After insert node at last position: ");
+        System.out.print("After inserting node at last position circular linked list: ");
         list.display();
         br.close();
     }
