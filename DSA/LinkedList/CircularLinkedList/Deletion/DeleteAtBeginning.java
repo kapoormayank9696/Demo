@@ -10,12 +10,10 @@ public class DeleteAtBeginning {
         // Defalut Access Modifier And Data Members
         int data;
         Node next;
-        Node prev;
         // Parameterized Constructor
         public Node (int data) {
             this.data=data;
             this.next=null;
-            this.prev=null;
         }
     }
     
@@ -27,27 +25,50 @@ public class DeleteAtBeginning {
             head=newNode;
             // Pointing to itself as it's the only node in the list
             newNode.next=head;
+        }else {
+
+            Node temp=head;
+            while(temp.next != head) {
+                temp=temp.next;
+            }
+            temp.next=newNode;
+            newNode.next=head;
         }
-        Node temp=head;
-        while(temp.next != null) {
-            temp=temp.next;
-        }
-        temp.next=newNode;
-        newNode.next=head;
-        head=newNode;
     }
 
+    // Function to delete the first node from circular linked list
+    public void deleteAtBeginning() {
+        if(head == null) {
+            System.out.println("Empty circular linked list....");
+            return;
+        }
+        if(head.next == head) {
+            head=null;
+            return;
+        }
+        Node temp=head;
+        // Find head node
+        while(temp.next != head) {
+            temp=temp.next;
+        }
+        temp.next=head.next; // last node points to second node
+        head=head.next; // Move head towards
+    }
+    
     // Function to display the circular linked list
     public void display() {
         if(head == null) {
             System.out.println("Empty circular linked list....");
-            return;
         }
         Node temp=head;
         while(temp != null) {
             System.out.print(temp.data+"<-->");
             temp=temp.next;
+            if(temp == head) {
+                break;
+            }
         }
+        System.out.println("(head)");
     }
 
     // Main function
@@ -63,8 +84,9 @@ public class DeleteAtBeginning {
             }
             System.out.print("Display nodes of circular linked list: ");
             list.display();
-        }catch (Exception e) {
-            System.out.println(e.getCause());
+            list.deleteAtBeginning();
+            System.out.print("After delete node from beginning: ");
+            list.display();
         }
     }
 }
