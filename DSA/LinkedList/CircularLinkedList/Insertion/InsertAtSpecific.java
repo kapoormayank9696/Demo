@@ -98,7 +98,7 @@ public class InsertAtSpecific {
     public static void main(String[] args) throws Exception{
         @SuppressWarnings("unused")
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter number of terms: ");
+        System.out.print("Enter number of terms of nodes: ");
         int n=Integer.parseInt(br.readLine());
         InsertAtSpecific list=new InsertAtSpecific();
         System.out.print("Enter nodes: ");

@@ -78,16 +78,16 @@ public class InsertAtBeginning {
         InsertAtBeginning list = new InsertAtBeginning();
         @SuppressWarnings("unused")
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter number of terms: ");
+        System.out.print("Enter number of terms of nodes: ");
         int n=sc.nextInt();
-        System.out.print("Enter element: ");
+        System.out.print("Enter nodes: ");
         for(int i=0;i<n;i++){
             int data=sc.nextInt();
             list.insert(data);
         }
         System.out.print("Display Circular Linked List: ");
         list.display();
-        System.out.print("Enter element to be inserted at beginning: ");
+        System.out.print("Enter node to be inserted at beginning: ");
         int data=sc.nextInt();
         list.insertAtBeginning(data);
         System.out.print("Display Circular Linked List after insertion at beginning: ");
