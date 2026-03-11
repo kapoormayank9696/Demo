@@ -2,6 +2,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class IsSpace {
+    
     // Main function
     public static void main(String[] args) throws Exception{
         try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in));) {
