@@ -49,6 +49,20 @@ public class StackUsingLinked_List {
         return k;
     }
 
+    // Method of search operation
+    public boolean search(int value) {
+        boolean check=false;
+        Node temp=top;
+        while(temp != null) {
+            if(temp.data == value) {
+                check=true;
+                break;
+            }
+            temp=temp.next;
+        }
+        return check;
+    }
+
     // Function to display the stack data
     public void display(){
         if(top==null){
@@ -86,7 +100,15 @@ public class StackUsingLinked_List {
         System.out.print("After popped the stack element: ");
         // Call to display method
         list.display();
-        System.out.print("New top stack element: "+list.peek());
+        System.out.println("New top stack element: "+list.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        // Call to search operation
+        if(list.search(value)) {
+            System.out.println("Yes,the value is exist into stack...");
+        }else {
+            System.out.println("No,the value is not exist into stack..");
+        }
         sc.close();
     }
 }

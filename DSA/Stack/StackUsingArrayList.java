@@ -37,6 +37,11 @@ public class StackUsingArrayList {
             return list.get(list.size()-1);
         }
 
+        // Search Operation
+        public boolean search(int value){
+            return list.contains(value);
+        }
+
         // Method of display the stack
         @Override
         public String toString(){
@@ -60,6 +65,13 @@ public class StackUsingArrayList {
         System.out.println("Popped element: "+stack.pop());
         System.out.println("After popped stack element: "+stack.toString());
         System.out.println("New top element: "+stack.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        if(stack.search(value)){
+            System.out.println("Yes,the value exist into stack..");
+        }else {
+            System.out.println("No, the value is not exist into stack..");
+        }
         sc.close();
     }
 }

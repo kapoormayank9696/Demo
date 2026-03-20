@@ -50,7 +50,19 @@ public class StackUsingArray{
         return arr[top];
     }
 
-    // Display function of queue
+    // Search Operation
+    public boolean search(int value) {
+        boolean check=false;
+        for(int i=0;i<=top;i++) {
+            if(arr[i] == value) {
+                check=true;
+                break;
+            }
+        }
+        return check;
+    }
+
+    // Display function of stack
     public void display(){
         if(isEmpty()){
             System.out.println("Stack is an empty!!!");
@@ -81,6 +93,13 @@ public class StackUsingArray{
         System.out.print("After popped the stack data: ");
         stack.display();
         System.out.println("New top stack element: "+stack.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        if(stack.search(value)) {
+            System.out.println("Yes, the value exist into stack..");
+        }else {
+            System.out.println("No, the value is not exist into stack..");
+        }
         sc.close();
     }
 }

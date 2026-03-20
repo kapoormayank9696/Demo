@@ -13,12 +13,32 @@ public class StackClass{
         System.out.print("Enter element: ");
         for(int i=0;i<n;i++){
             int value=sc.nextInt();
+            // Push Operation
             stack.push(value);
         }
-        System.out.println("Dispaly the stack data: "+stack.toString());
-        System.out.println("Top stack element: "+stack.peek());
-        System.out.println("Popped stack element: "+stack.pop());
-        System.out.println("New top stack element: "+stack.peek());
+        // Display Operation
+        System.out.println("Display the stack data: "+stack);
+        // Check Stack Is An Empty Or Not
+        if (!stack.isEmpty()) {
+            System.out.println("Top stack element: " + stack.peek());
+            System.out.println("Popped stack element: " + stack.pop());
+            if (!stack.isEmpty()) {
+                System.out.println("New top stack element: " + stack.peek());
+            }
+        } else {
+            System.out.println("Stack is empty, cannot perform peek/pop");
+        }
+        // Display Operation
+        System.out.println("Display the stack data: "+stack);
+        // Searching Operation
+        System.out.print("Enter value for searching: ");
+        int values=sc.nextInt();
+        int pos=stack.search(values);
+        if(pos != -1) {
+            System.out.println("Element found at position from top: " + pos);
+        }else {
+            System.out.println("Element not found in stack");
+        }
         sc.close();
     }
 }
