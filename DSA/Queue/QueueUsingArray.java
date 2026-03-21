@@ -51,6 +51,18 @@ public class QueueUsingArray {
         return arr[front];
     }
 
+    // Searching Operation
+    public boolean search(int value) {
+        boolean check=false;
+        for(int i=front;i<=rear;i++) {
+            if(arr[i] == value) {
+                check=true;
+                break;
+            }
+        }
+        return check;
+    }
+
     // Display method of queue
     public void display(){
         if(isEmpty()){
@@ -85,6 +97,13 @@ public class QueueUsingArray {
         queue.display();
         System.out.println("Popped queue element: "+queue.dequeue());
         System.out.println("New top queue element: "+queue.peek());
+        System.out.print("Enter value for seaching: ");
+        int value=sc.nextInt();
+        if(queue.search(value)){
+            System.out.println("Yes,the value is exist into queue..");
+        }else {
+            System.out.println("No, the value is not exist into queue..");
+        }
         sc.close();
     }
 }

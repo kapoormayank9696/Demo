@@ -58,6 +58,20 @@ public class QueueUsingLinked_List {
         return k;
     }
 
+    // Search Operation
+    public boolean search(int value) {
+        boolean check=false;
+        Node temp=first;
+        while(temp != null) {
+            if(temp.data == value) {
+                check=true;
+                break;
+            }
+            temp=temp.next;
+        }
+        return check;
+    }
+
     // Method to display the queue data
     public void display(){
         if(isEmpty()){
@@ -96,6 +110,13 @@ public class QueueUsingLinked_List {
         // Call the display method to print queue elements
         queue.display();
         System.out.println("New top queue element: "+queue.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        if(queue.search(value)) {
+            System.out.println("Yes, the value exist into queue..");
+        }else {
+            System.out.println("No, the value not exist into queue..");
+        }
         sc.close();
     }
 }

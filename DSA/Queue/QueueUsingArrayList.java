@@ -35,6 +35,11 @@ public class QueueUsingArrayList {
             return list.get(0);
         }
 
+        // Search Operation
+        public boolean search(int value) {
+            return list.contains(value);
+        }
+        
         @Override
         public String toString(){
             return list.toString();
@@ -58,6 +63,13 @@ public class QueueUsingArrayList {
         System.out.println("Popped element: "+queue.dequeue());
         System.out.println("After popped the queue: "+queue.toString());
         System.out.println("New top queue element: "+queue.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        if(queue.search(value)) {
+            System.out.println("Yes, the value exist into queue..");
+        }else {
+            System.out.println("No, the value not exist into queue..");
+        }
         sc.close();
     }
 }

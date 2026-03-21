@@ -19,6 +19,13 @@ public class QueueArrayDequeue{
         System.out.println("Top queue element: "+queue.peek());
         System.out.println("Popped queue element: "+queue.remove());
         System.out.println("New top queue element: "+queue.peek());
+        System.out.print("Enter value for searching: ");
+        int value=sc.nextInt();
+        if(queue.contains(value)) {
+            System.out.println("Yes, the value exist into queue..");
+        }else {
+            System.out.println("No, the value is not exist into queue..");
+        }
         sc.close();
     }
 }
