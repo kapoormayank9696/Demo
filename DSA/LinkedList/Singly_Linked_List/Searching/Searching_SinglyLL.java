@@ -40,7 +40,7 @@ public class Searching_SinglyLL {
         }
         return false;
     }
-
+    
     // Method to display the singly linked list
     public void display() {
         if (head == null) {
