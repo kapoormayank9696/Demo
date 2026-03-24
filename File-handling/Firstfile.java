@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 public class Firstfile {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         
         // Create a new file
@@ -31,7 +32,7 @@ public class Firstfile {
             filewriter.write("Screptile\n");
             filewriter.write("Venusur\n");
             filewriter.write("Garchomp\n");
-            filewriter.write("Gyaradus");
+            filewriter.write("Gyaradus\n");
             filewriter.write("Meta gross\n");
             filewriter.write("Goodra\n");
             filewriter.write("Talon Flame");

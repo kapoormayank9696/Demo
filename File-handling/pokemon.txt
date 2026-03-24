@@ -1,10 +1,10 @@
-Pickachu
-Charizard
-Grey Ninja
-Lucario
-Screptile
-Venusur
-Garchomp
-GyaradusMeta gross
-Goodra
-Talon Flame
+CHARIZARD
+GARCHOMP
+GOODRA
+GREY NINJA
+GYARADUSMETA GROSS
+LUCARIO
+PICKACHU
+SCREPTILE
+TALON FLAME
+VENUSUR
