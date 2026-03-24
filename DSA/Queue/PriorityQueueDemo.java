@@ -25,6 +25,7 @@ public class PriorityQueueDemo {
             // ---------------------------
             System.out.print("Enter number of elements for Min Heap: ");
             int n=Integer.parseInt(br.readLine());
+            // Create Object Of Priority Queue Class && Integer DataType
             PriorityQueue<Integer> minHeap=new PriorityQueue<>();
             int values;
             System.out.print("Enter elements in min heap: ");
@@ -33,14 +34,17 @@ public class PriorityQueueDemo {
                 minHeap.add(values);
             }
             System.out.print("Min Heap (ascending): ");
+            // Check min heap is an empty or not
             while(!minHeap.isEmpty()) {
+                // poll() keyword
                 System.out.print(minHeap.poll() + " ");
-            }System.out.println();
+            }System.out.print("\n");
             // ---------------------------
             // 2. MAX HEAP (DEFAULT)
             // ---------------------------
             System.out.print("Enter number of elements for Max Heap: ");
             int m=Integer.parseInt(br.readLine());
+            // Create Object Of Priority Queue Class && Integer DataType but store value reverse order
             PriorityQueue<Integer> maxHeap=new PriorityQueue<>(Collections.reverseOrder());
             System.out.print("Enter elements in max heap: ");
             for(int i=0;i<m;i++) {
@@ -48,14 +52,16 @@ public class PriorityQueueDemo {
                 maxHeap.add(values);
             }
             System.out.print("Max Heap (descending): ");
+            // Check max heap is an empty or not
             while(!maxHeap.isEmpty()) {
                 System.out.print(maxHeap.poll() + " ");
             }
-            System.out.println();
+            System.out.print("\n");
             // ---------------------------
             // 3. CUSTOM OBJECT (Student)
             // ---------------------------
             System.out.println("\nCustom Object Example (Highest Marks First):");
+            // Create Object Of Priority Queue Of Class Student class DataType Store
             PriorityQueue<Student> studentPQ=new PriorityQueue<>((a,b)-> b.marks - a.marks);
             studentPQ.add(new Student("Kia",85));
             studentPQ.add(new Student("Roy",99));
