@@ -8,13 +8,20 @@ public class LifeCycle {
             for(int i=0;i<5;i++) {
                 System.out.println("Number: "+i);
                 try {
+                    // Use sleep life cycle thread keyword
                     Thread.sleep(1000); // 1 second delay
                 }catch (InterruptedException e) {
                     System.out.println("Thread interrupted");
                 }
             }
         } );
-        System.out.println("Main thread finished");
         t1.start();
+        // Use join life cycle thread keyword
+        try {
+            t1.join(); // main waits for t1
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Main thread finished");
     }
 }
