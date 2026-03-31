@@ -11,6 +11,7 @@ public class PriorityExample {
         Thread t3=new Thread(() -> {
             System.out.println(Thread.currentThread().getName());
         });
+        // Thread priorities are set using setPriority() method
         t1.setPriority(Thread.MIN_PRIORITY); // 1
         t2.setPriority(Thread.NORM_PRIORITY); // 5 default
         t3.setPriority(Thread.MAX_PRIORITY); // 10
