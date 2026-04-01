@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-public class Permutation_String {
+public class Permutation_StringArray {
     // Function to perform the backtracking algorithm to generate permutations of a string array
     public static void permute(String[] arr,List<List<String>> result,List<String> temp) {
         // Base case: if the current permutation is complete, add it to the result list
