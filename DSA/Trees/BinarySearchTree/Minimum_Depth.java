@@ -1,5 +1,5 @@
 // Minimum Depth Of BST Algorithm Implementation In Java
-public class MinimumDepth {
+public class Minimum_Depth {
     // Node class of BST
     public static class Node{
         // Default Access Modifier And Data Members

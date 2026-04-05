@@ -1,5 +1,5 @@
 // Minimum Depth Of Binary Tree Algorithm Implementation In Java
-public class MinimumDepth {
+public class Minimum_Depth {
     // Node class of Binary Tree
     @SuppressWarnings("unused")
     public static class Node{

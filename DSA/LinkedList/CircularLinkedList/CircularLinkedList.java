@@ -1,4 +1,5 @@
-public class CircularLL{
+// Circular Linked List All Operations Algorithm Implemented In Java
+public class CircularLinkedList{
     class Node{
         int data;
         Node next;
@@ -31,7 +32,7 @@ public class CircularLL{
         System.out.println("Back to head <->"+head.data);
     } 
     public static void main(String[] args){
-        CircularLL list = new CircularLL();
+        CircularLinkedList list = new CircularLinkedList();
         list.insert(5);
         list.insert(23);
         list.insert(33);

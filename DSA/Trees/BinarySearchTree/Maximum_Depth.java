@@ -1,5 +1,5 @@
 // Maximum Depth Of BST Algorithm Implementation In Java
-public class MaximumDepth {
+public class Maximum_Depth {
     // Node class of BST
     public static class Node{
         // Default Access Modifier And Data Members

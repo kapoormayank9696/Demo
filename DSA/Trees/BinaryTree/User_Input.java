@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UserInput {
+public class User_Input {
     // Class Node Of Binary Tree(BT)
     public static class Node {
         // Default Access Modifier And Data Members

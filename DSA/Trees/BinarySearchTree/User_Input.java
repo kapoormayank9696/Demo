@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class UserInput {
+public class User_Input {
     // Node class of Binary Search Tree
     public static class Node {
         // Default Access Modifier And Data Members
