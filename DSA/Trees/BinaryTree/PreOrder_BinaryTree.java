@@ -1,4 +1,4 @@
-// Binary Tree(BT) Algorithm Implementation In Java
+// PreOrder Traversal Of Binary Tree(BT) Algorithm Implementation In Java
 
 public class PreOrder_BinaryTree {
     
