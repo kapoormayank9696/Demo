@@ -90,6 +90,21 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 🧠 Recursion
 
+
+🔙 Backtracking
+
+   - N-Queens Problem  
+   - Sudoku Solver  
+   - Rat in a Maze  
+   - Subsets
+   - Subsets II
+   - Power Set  
+   - Permutations
+   - Permutations II
+   - Combination
+   - Combination Sum I
+   - Combination Sum II
+
 ⏱️ Time & Space Complexity (Basics)
 
 ---
