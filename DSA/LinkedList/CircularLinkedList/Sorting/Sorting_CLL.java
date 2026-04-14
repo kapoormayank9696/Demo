@@ -28,7 +28,43 @@ public class Sorting_CLL {
         newNode.next = head;
         return head;
     }
-    
+
+    // Function to sort the Circular Linked List using Selection Sort
+    public void selectionSort(Node head) {
+        if (head == null) {
+            return;
+        }
+        Node temp = head;
+        do {
+            Node min = temp;
+            Node r = temp.next;
+            while (r != head) {
+                if (r.data < min.data) {
+                    min = r;
+                }
+                r = r.next;
+            }
+            // Swap data
+            int x = temp.data;
+            temp.data = min.data;
+            min.data = x;
+            temp = temp.next;
+        } while (temp != head);
+    }
+
+    // Function to display the Circular Linked List
+    public void display(Node head) {
+        if (head == null) {
+            return;
+        }
+        Node temp = head;
+        do {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        } while (temp != head);
+        System.out.println("(head)");
+    }
+
     // Main function
     public static void main(String[] args) {
         Sorting_CLL cll = new Sorting_CLL();
