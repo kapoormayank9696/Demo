@@ -30,16 +30,41 @@ public class HashMapCode {
             }
         }
 
+        // Hash Function
+        private int hashFunction(K key) { // 0 to N-1
+            // hashCode() :- inbuilt function which gives hash code of key
+            int hc = key.hashCode();
+            // abs :- absolute value, % :- modulus operator
+            return Math.abs(hc) % N;
+        }
+
+        // Search In Linked List
+        private int searchInLL(K key, int bi) { // bucket index
+            LinkedList<Node> ll = buckets[bi];
+            int di = 0; // data index
+            for (Node node : ll) {
+                if (node.key.equals(key)) {
+                    return di;
+                }
+                di++;
+            }
+            return -1; // key not found
+        }
+        
         // Put Opearation
         public void put(K key, V value) {
             int bi = hashFunction(key); // bucket index
-            int di = searchInBucket(key, bi); // data index in bucket
+            int di = searchInLL(key, bi); // data index in bucket
             if( di == -1) { // Key does not exist
                 buckets[bi].add(new Node(key,value));
                 n++;
             }else { // key exists
                 Node node = buckets[bi].get(di);
                 node.value = value;
+            }
+            double lambda = (double)n/N; // load factor
+            if(lambda > 2.0) {
+                rehash();
             }
         }
 
