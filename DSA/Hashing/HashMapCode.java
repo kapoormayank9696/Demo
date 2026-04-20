@@ -18,6 +18,7 @@ public class HashMapCode {
         private int N; // size of bucket array
         private LinkedList<Node>[] buckets; // bucket array
         
+        @SuppressWarnings("unchecked")
         public HashMap() {
             this.N = 4; // initial size of bucket array
             
