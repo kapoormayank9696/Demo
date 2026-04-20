@@ -24,7 +24,6 @@ public class HashMapCode {
             
             // Initialize bucket array with linked lists
             this.buckets = new LinkedList[N];
-            
             // Initialize each bucket with a new linked list
             for (int i = 0; i < N; i++) {
                 buckets[i] = new LinkedList<>();
