@@ -2,11 +2,12 @@
 
 import java.util.LinkedList;
 public class HashMapCode {
+    @SuppressWarnings("unused")
     static class HashMap<K,V> { // generics
         private class Node {
             K key;
             V value;
-            // Parameterized Constructor
+            // Parameterized Constructor/ Dynamic Constructor
             public Node(K key, V value) {
                 this.key = key;
                 this.value = value;
@@ -15,7 +16,7 @@ public class HashMapCode {
 
         // Data Members
         private int n; // number of nodes
-        private int N; // size of bucket array
+        private final int N; // size of bucket array
         private LinkedList<Node>[] buckets; // bucket array
         
         @SuppressWarnings("unchecked")
@@ -51,6 +52,25 @@ public class HashMapCode {
             return -1; // key not found
         }
         
+        // Rehashing
+        @SuppressWarnings("unchecked")
+        private void rehash() {
+            LinkedList<Node>[] oldBuckets = buckets;
+            // Double the size of bucket array
+            buckets = new LinkedList[N*2];
+            for (int i = 0; i < N*2; i++) {
+                LinkedList<Node> ll = new LinkedList<>();
+                buckets[i] = ll;
+            }
+            n = 0; // reset number of nodes
+            // Rehash all the nodes from old bucket array to new bucket array
+            for (LinkedList<Node> ll : oldBuckets) {
+                for (Node node : ll) {
+                    put(node.key, node.value);
+                }
+            }
+        }
+
         // Put Opearation
         public void put(K key, V value) {
             int bi = hashFunction(key); // bucket index
@@ -68,30 +88,45 @@ public class HashMapCode {
             }
         }
 
-        // Get Opearation
+        // Get Operation
         public V get(K key) {
+            int bi = hashFunction(key); // bucket index
+            int di = searchInLL(key, bi); // data index in bucket
+            if( di != -1) { // Key exists
+                Node node = buckets[bi].get(di);
+                return node.value;
+            }
             return null;
         }
 
-        // Contains Key Opearation
+        // Contains Key Operation
         public boolean containsKey(K key) {
-            return false;
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi);
+            return di != -1;
         }
 
-        // Remove Opearation
+        // Remove Operation
         public void remove(K key) {
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi);
+            if (di != -1) {
+                buckets[bi].remove(di);
+                n--;
+            }
         }
 
-        // Size Opearation
+        // Size Operation
         public int size() {
             return n;
         }
 
-        // Key Set Opearation
+        // Key Set Operation
         public ArrayList<K> keySet() {
 
         }
-        // Is Empty Opearation
+
+        // Is Empty Operation
         public boolean isEmpty() {
             return n == 0;
         }
