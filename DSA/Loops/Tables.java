@@ -4,7 +4,10 @@ public class Tables {
     // Function to print the multiplication table of a given number
     public static void printTable(int n) {
         for (int i = 1; i <= 10; i++) {
-            System.out.println(n + " x " + i + " = " + (n * i));
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(i + " x " + j + " = " + (i * j));
+            }
+            System.out.print("\n"); // Print a new line after each table
         }
     }
 
