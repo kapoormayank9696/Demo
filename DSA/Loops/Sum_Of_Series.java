@@ -12,13 +12,13 @@ public class Sum_Of_Series {
             // Initialize sum with the first term of the series
             double sum = 1.0;
             // Initialize the first term
-            double term = 1.0,t=1.0; 
+            double term,t=1.0; 
             for (int i = 1; i < n; i++) {
                 // Calculate the next term
                 term = (2*i) * (2*i - 1); 
                 t = -t * x * x / term; 
                 // Add the term to the sum
-                sum += term; 
+                sum += t; 
             }
             System.out.println("The sum of the series is: " + sum);
         }
