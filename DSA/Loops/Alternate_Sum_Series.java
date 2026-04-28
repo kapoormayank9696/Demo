@@ -8,18 +8,18 @@ public class Alternate_Sum_Series {
             int value = sc.nextInt();
             System.out.print("Enter the number of terms n: ");
             int n = sc.nextInt();
-            int  alternateSum = 0,ctr;
-            for (int i = 1; i < n; i++) {
-                ctr=(2*i+1);
-                if (i % 2 == 0) { // Even term
-                    System.out.println((int) Math.pow(value,ctr));
-                    alternateSum += Math.pow(value, ctr);
+            int  alternateSum = 0,ctr,k;
+            for (int i = 1; i <= n; i++) {
+                ctr=(2*i-1);
+                if (i % 2 == 0) {
+                    k=(int)Math.pow(value,ctr);
                 } else { 
-                    System.out.println("-"+(int) Math.pow(value,ctr));
-                    alternateSum -= Math.pow(value, ctr);
+                    k= - (int)Math.pow(value,ctr);
                 }
+                System.out.println(k);
+                alternateSum += k;
             }        
-            System.out.println("The Sum Of Series: " + alternateSum);
+            System.out.println("The Sum Of Series: " + Math.abs(alternateSum));
         }
     }
 }
