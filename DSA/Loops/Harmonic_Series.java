@@ -7,7 +7,6 @@ public class Harmonic_Series {
             System.out.print("Enter the value of n: ");
             int n = sc.nextInt();
             double harmonicSum = 0.0;
-
             for (int i = 1; i <= n; i++) {
                 if(i < n) {
                     System.out.print("1/" + i + " + ");
