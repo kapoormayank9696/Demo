@@ -1,5 +1,4 @@
 // Recursion Numbers In Range Algorithm Implementation In Java
-
 import java.util.Scanner;
 public class Recursion_Numbers_Range {
     // Function to check number is valid or not
