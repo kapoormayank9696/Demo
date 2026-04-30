@@ -1,4 +1,4 @@
-// check Armstrong number or not Algorithm Implementation In Java
+// Check Armstrong number or not Algorithm Implementation In Java
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class Armstrong_Number {
@@ -7,7 +7,6 @@ public class Armstrong_Number {
         int originalNum = num;
         int sum = 0;
         int n = String.valueOf(num).length(); // Number of digits
-
         while (num > 0) {
             int digit = num % 10; // Get the last digit
             sum += Math.pow(digit, n); // Add the digit raised to the power of n
@@ -16,7 +15,7 @@ public class Armstrong_Number {
 
         return sum == originalNum; // Check if the sum is equal to the original number
     }
-    
+
     // Main function
     public static void main(String[] args) {
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
