@@ -23,7 +23,7 @@ public class LCM {
             System.out.print("Input 2nd number for LCM: ");
             int m=Integer.parseInt(reader.readLine());
             int result=lcm(n,m);
-            System.out.println("The LCM of "+" and "+" is : "+result);
+            System.out.println("The LCM of "+n+" and "+m+" is : "+result);
         }
     }
 }
