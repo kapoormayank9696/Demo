@@ -21,7 +21,6 @@ public class Decimal_To_HexaDecimal {
             result=hexaDecimal[remainder]+result;
             n=n/16;
         }
-
         System.out.println("The equivalent Hexadecimal Number : "+result);
     }
 
