@@ -1,6 +1,7 @@
 // HexaDecimal To Decimal Algorithm Implementation In Java
 import java.io.*;
 public class HexaDecimal_To_Decimal {
+    
     // Function to Convert Hexa Decaiml To Decimal
     public static void hexaToDecimal(String hex) {
         int result = Integer.parseInt(hex, 16);
