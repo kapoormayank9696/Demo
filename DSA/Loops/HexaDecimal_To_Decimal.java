@@ -10,6 +10,7 @@ public class HexaDecimal_To_Decimal {
 
     // Main function
     public static void main(String[] args) throws Exception{
+        
         try(BufferedReader reader=new BufferedReader(new InputStreamReader(System.in))) {
             System.out.print("Input  any Hexa-Decimal number: ");
             String n=reader.readLine();
