@@ -20,18 +20,25 @@ public class Combinations_Of_A_Phone_Number {
             "tuv",  // 8
             "wxyz"  // 9
         };
+
+        // Function to check the solution
         public void solve(String digits,int index,String temp) {
             if(digits.length() == index) {
                 result.add(temp);
                 return;
             }
-            // 
+
+            // Store The Value In Letters Variables
             String letters=map[digits.charAt(index)-'0'];
+
             // Traversing
             for(char ch:letters.toCharArray()) {
                 solve(digits,index+1,temp+ch);
             }
+
         }
+
+        // Function to perform the Combinations of a Phone Number 
         public List<String> letterCombinations(String digits) {
             if(digits.length() == 0) {
                 return result;
