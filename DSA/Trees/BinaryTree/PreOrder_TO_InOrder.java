@@ -78,6 +78,7 @@ public class PreOrder_TO_InOrder {
         int[] preorder = {3,9,20,15,7};
         int[] inorder = {9,3,15,20,7};
         TreeNode root=tree.BuildTree(inorder, preorder);
+        System.out.print("\nAfter Convert InOrder To PreOrder: ");
         preOrder(root);
     }
 }
