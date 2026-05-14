@@ -3,7 +3,7 @@ public class PriorityExample {
 
     // Main function
     public static void main(String[] args) {
-        
+        // Creates Threads
         Thread t1=new Thread(() -> {
             System.out.println(Thread.currentThread().getName());
         });
