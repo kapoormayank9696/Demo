@@ -1,4 +1,4 @@
-// Deadlock example Algorithm in Java
+// Deadlock Thread example Implementation In Java
 class Recource {
     // Empty class representing a resource
 }
