@@ -9,11 +9,13 @@ public class YeildExample {
                 Thread.yield();
             }
         });
+
         Thread t2=new Thread(() -> {
             for(int i=1;i<=5;i++) {
                 System.out.println(Thread.currentThread().getName() + " -> T2: " + i);
             }
         });
+        
         // Run t1 Thread ,t2 Thread
         t1.start();
         t2.start();

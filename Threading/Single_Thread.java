@@ -10,9 +10,11 @@ class MyThread extends Thread {
 public class Single_Thread {
     // Main function
     public static void main(String[] args) {
+
         System.out.println("Main started");
         // Create Object Of Class MyThread
         MyThread t1=new MyThread();
+        
         // start() Operation (JVM calls run() internally)
         t1.start(); // Creates new thread
         System.out.println("Main ended");
