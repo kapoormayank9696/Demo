@@ -1,7 +1,4 @@
-// Deadlock Thread example Implementation In Java
-// 👉 Both wait forever ❌
-// 👉 Program freezes
-
+// Deadlock Prevention Thread example Implementation In Java
 class Resource {
     // Data Member
     String name;
@@ -12,9 +9,9 @@ class Resource {
     }
 }
 
-public class DeadLock {
-    // Main function
-    @SuppressWarnings({"CallToPrintStackTrace", "static-access"})
+public class DeadlockPrevention {
+// Main function
+@SuppressWarnings({"CallToPrintStackTrace", "static-access"})
     public static void main(String[] args) {
         // Create Resources Objects of the Resource class
         Resource r1 = new Resource("Resource 1");
@@ -43,16 +40,16 @@ public class DeadLock {
         Thread t2 = new Thread(() ->  {
 
             // Locking r2
-            synchronized (r2) {
-                System.out.println("Thread 2 locked " + r2.name);
+            synchronized (r1) {
+                System.out.println("Thread 1 locked " + r1.name);
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
                 // Trying to lock r1
-                synchronized (r1) {
-                    System.out.println("Thread 2 acquired lock on " + r1.name);
+                synchronized (r2) {
+                    System.out.println("Thread 2 acquired lock on " + r2.name);
                 }
             }
         });
@@ -62,4 +59,3 @@ public class DeadLock {
         t2.start();
     }
 }
-

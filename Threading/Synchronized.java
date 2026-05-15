@@ -6,7 +6,7 @@ class Counter {
     }
 }
 
-public class Synchronished {
+public class Synchronized {
     @SuppressWarnings("CallToPrintStackTrace")
     // Main function
     public static void main(String[] args) {

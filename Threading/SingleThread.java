@@ -7,7 +7,7 @@ class MyThread extends Thread {
     }
 }
 
-public class Single_Thread {
+public class SingleThread {
     // Main function
     public static void main(String[] args) {
 
