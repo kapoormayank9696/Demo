@@ -13,6 +13,8 @@ public class SharedResource {
     public synchronized void produce(int value){
         while(isProduced){
             try {
+
+                // wait() Thread
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -21,6 +23,8 @@ public class SharedResource {
         data = value;
         System.out.println("Produced: " + data);
         isProduced = true;
+
+        // notify() Thread
         notify();
     }
 
@@ -28,6 +32,8 @@ public class SharedResource {
     public synchronized void consume(){
         while(!isProduced){
             try {
+                
+                // wait() Thread
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -35,6 +41,8 @@ public class SharedResource {
         }
         System.out.println("Consumed: " + data);
         isProduced = false;
+
+        // notify() Thread
         notify();
     }
 }
