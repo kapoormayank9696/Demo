@@ -9,7 +9,7 @@ class Resource {
     }
 }
 
-public class DeadlockPrevention {
+public class Deadlock_Prevention {
 // Main function
 @SuppressWarnings({"CallToPrintStackTrace", "static-access"})
     public static void main(String[] args) {
