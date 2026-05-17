@@ -22,7 +22,8 @@ public class DeleteBST {
         }
         if (data < root.data) {
             root.left = insert(root.left, data);
-        } else {
+        } 
+        else {
             root.right = insert(root.right, data);
         }
         return root;
@@ -57,10 +58,12 @@ public class DeleteBST {
         if (key < root.data) {
             // Left Subtree
             root.left = delete(root.left, key);
-        } else if (key > root.data) {
+        } 
+        else if (key > root.data) {
             // Right Subtree
             root.right = delete(root.right, key);
-        } else {
+        } 
+        else {
             // Node with only one child or no child
             if (root.left == null) {
                 return root.right;
