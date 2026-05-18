@@ -1,4 +1,3 @@
-
 //Parent Calss of Human Class
 
 public class Species{
