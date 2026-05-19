@@ -1,6 +1,7 @@
 // LeetCode Problem 110: Balanced Binary Tree
 
 public class Solution110 {
+    
     // Node class for the binary tree
     public static class TreeNode {
         // Data members
@@ -16,21 +17,21 @@ public class Solution110 {
         }
     }
 
-    // Function to insert the nodes in the binary tree
-    public static TreeNode insert(TreeNode root, int val) {
-        if (root == null) {
-            return new TreeNode(val);
+    // Class to insert the node in binary tree
+    public static class BinaryTree {
+        public int index = -1;
+        public TreeNode insert(Integer[] values) {
+            index++;
+            if(index >= values.length || values[index] == null) {
+                return null;
+            }
+            // Create a new node with the current value
+            TreeNode newNode = new TreeNode(values[index]);
+            // Recursively insert left and right child nodes
+            newNode.left = insert(values);
+            newNode.right = insert(values);
+            return newNode;
         }
-
-        // Left Subtree
-        if (val < root.val) {
-            root.left = insert(root.left, val);
-        } 
-        // Right Subtree
-        else {
-            root.right = insert(root.right, val);
-        }
-        return root;
     }
 
     // Function to print the binary tree pre order
@@ -76,12 +77,8 @@ public class Solution110 {
     public static void main(String[] args) {
         // Integer[] values = {9,3, 20, null, null, 15, 7};
         Integer[] values = {1,2,2,3,null,null,3,4,null,null,4};
-        TreeNode root = null;
-        for (Integer val : values) {
-            if (val != null) {
-                root = insert(root, val);
-            }
-        }
+        BinaryTree tree = new BinaryTree();
+        TreeNode root = tree.insert(values);
         System.out.println("Pre-order Traversal of the Binary Tree:");
         printPreOrder(root);
         System.out.println("\nIs the binary tree balanced? " + isBalanced(root));
