@@ -1,5 +1,7 @@
 // LeetCode Problem 2540 : Minimum Common Value
 public class Solution2540 {
+
+    // Function to find the minimum common value in two sorted arrays
     public int getCommon(int[] nums1, int[] nums2) {
         int i = 0, j = 0;
         while (i < nums1.length && j < nums2.length) {
@@ -20,7 +22,7 @@ public class Solution2540 {
         int[] nums2 = {2, 4};
         Solution2540 solution = new Solution2540();
         int result = solution.getCommon(nums1, nums2);
-        System.out.println(result);
+        System.out.println("The minimum common value is: " + result);
     }
 }
 
