@@ -59,6 +59,7 @@ public class Solution101 {
         }
     }
 
+    // Main function
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         int[] arr = {1,2,3,-1,-1,4,-1,-1,2,4,-1,-1,3,-1,-1};
