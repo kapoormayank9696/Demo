@@ -34,7 +34,7 @@ public class Is_Symmetry {
         if(root == null) {
             return;
         }
-        System.out.print(root.val);
+        System.out.print(root.val+" ");
         printBST(root.left);
         printBST(root.right);
     }
@@ -63,7 +63,7 @@ public class Is_Symmetry {
         TreeNode root = buildBST(arr,arr.length,0);
         System.out.print("Print Binary Search Tree: ");
         printBST(root);
-        System.out.println("Is the binary search tree symmetric? "+sol.isSymmetry(root));
+        System.out.println("\nIs the binary search tree symmetric? "+sol.isSymmetry(root));
     }
 }
 
