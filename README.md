@@ -32,6 +32,8 @@ This repository covers core Java concepts such as OOP, exception handling, colle
     - Thread creation
     - Runnable interface
     - Thread synchronization
+    - Life Cycle
+    - Excetuor
 
 - 💾 JDBC (Java Database Connectivity)
     - Connecting Java with databases
