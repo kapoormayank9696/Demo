@@ -12,7 +12,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 ## ✅ Topics Covered
 ✅ Core Java Concepts
