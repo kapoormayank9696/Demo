@@ -12,7 +12,21 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
+🚀 Features
+
+✅ Core Java Concepts
 ## ✅ Topics Covered
+✅ Object-Oriented Programming (OOP)
+✅ Exception Handling
+✅ Collections Framework
+✅ Multithreading
+✅ JDBC with MySQL
+✅ DSA Implementations
+✅ Sorting & Searching Algorithms
+✅ Backtracking Problems
+✅ Mini Java Projects
+✅ LeetCode Solutions in Java
+
 ## 🧱 Object-Oriented Programming (OOP)
 
 - 🧱Classes and Objects
@@ -222,6 +236,8 @@ JDBC
 MySQL
 
 Git & GitHub
+
+Postman For Testing
 
 IDEs: Eclipse, IntelliJ IDEA, VS Code
 
