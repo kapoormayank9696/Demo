@@ -237,9 +237,13 @@ MySQL
 
 Git & GitHub
 
-Postman For Testing
+Postman
 
-IDEs: Eclipse, IntelliJ IDEA, VS Code
+Eclipse
+
+IntelliJ IDEA
+
+VS Code
 
 ---
 
