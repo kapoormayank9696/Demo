@@ -17,15 +17,15 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 ## ✅ Topics Covered
 - ✅ Core Java Concepts
 - ✅ Object-Oriented Programming (OOP)
-✅ Exception Handling
-✅ Collections Framework
-✅ Multithreading
-✅ JDBC with MySQL
-✅ DSA Implementations
-✅ Sorting & Searching Algorithms
-✅ Backtracking Problems
-✅ Mini Java Projects
-✅ LeetCode Solutions in Java
+- ✅ Exception Handling
+- ✅ Collections Framework
+- ✅ Multithreading
+- ✅ JDBC with MySQL
+- ✅ DSA Implementations
+- ✅ Sorting & Searching Algorithms
+- ✅ Backtracking Problems
+- ✅ Mini Java Projects
+- ✅ LeetCode Solutions in Java
 
 ## 🧱 Object-Oriented Programming (OOP)
 
