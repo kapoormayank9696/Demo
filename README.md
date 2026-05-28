@@ -241,6 +241,8 @@ Postman
 
 Eclipse
 
+NetBeans
+
 IntelliJ IDEA
 
 VS Code
