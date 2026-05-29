@@ -136,7 +136,7 @@ Java programming codes
    - ├── Car.java
    - ├── Running.java
    - └── Vechicle.java
--  Encapuslation/
+-  Encapsulation/
    - ├── Atm.java
    - └── Print.java
 -  Exception-Handling/
@@ -238,6 +238,8 @@ MySQL
 Git & GitHub
 
 Postman
+
+Xampp
 
 Eclipse
 
