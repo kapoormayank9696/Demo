@@ -127,7 +127,14 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
-## LeetCode Problems Solution In Java
+## 🧪 LeetCode Problems Solution In Java
+
+This repository also contains solutions to various LeetCode problems implemented in Java to improve:
+
+- Problem-solving skills
+- Coding interview preparation
+- Algorithmic thinking
+
 ---
 
 ## 📁 Folder Structure
