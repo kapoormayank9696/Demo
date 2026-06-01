@@ -64,27 +64,27 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ## ✅ DSA Concepts Covered
 
-📊 Arrays
+- 📊 Arrays
 
-⚙️ Loops
+- ⚙️ Loops
 
-🔗 Linked List (Singly / Doubly)
+- 🔗 Linked List (Singly / Doubly)
 
-📚 Stack
+- 📚 Stack
 
-🧺 Queue
+- 🧺 Queue
 
-🌳 Trees (Binary Tree, BST)
+- 🌳 Trees (Binary Tree, BST)
 
-🕸️ Graphs (Basic Representation)
+-🕸️ Graphs (Basic Representation)
 
-🔍 Searching Algorithms
+- 🔍 Searching Algorithms
 
    - Linear Search/ Sequential Search
 
    -  Binary Search
 
-📐 Sorting Algorithms
+- 📐 Sorting Algorithms
 
    - Bubble Sort
 
@@ -106,10 +106,10 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
    - Heap Sort
 
-🧠 Recursion
+- 🧠 Recursion
 
 
-🔙 Backtracking
+- 🔙 Backtracking
 
    - N-Queens Problem  
    - Sudoku Solver  
@@ -123,7 +123,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
    - Combination Sum I
    - Combination Sum II
 
-⏱️ Time & Space Complexity (Basics)
+- ⏱️ Time & Space Complexity (Basics)
 
 ---
 
