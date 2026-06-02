@@ -1,18 +1,18 @@
-## 📘 Java Object-Oriented Programming (OOP) & Projects
+# 📘 Java Object-Oriented Programming (OOP) & Projects
 
 This repository contains Java programs and projects demonstrating key Java concepts.
 It is designed for beginners and intermediate learners who want to understand Java programming in a practical and hands-on way.
 
 ---
 
-## 📖 About the Project
+# 📖 About the Project
 
 Java is a versatile, object-oriented programming language widely used in software development.
 This repository covers core Java concepts such as OOP, exception handling, collections, multithreading, JDBC, and small projects to apply the concepts practically.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 ## ✅ Topics Covered
 - ✅ Core Java Concepts
@@ -62,7 +62,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
   ---
 
-## ✅ DSA Concepts Covered
+# ✅ DSA Concepts Covered
 
 - 📊 Arrays
 
@@ -127,7 +127,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
 ---
 
-## 🧪 LeetCode Problems Solution In Java
+# 🧪 LeetCode Problems Solution In Java
 
 This repository also contains solutions to various LeetCode problems implemented in Java to improve:
 
@@ -137,7 +137,7 @@ This repository also contains solutions to various LeetCode problems implemented
 
 ---
 
-## 📁 Folder Structure
+# 📁 Folder Structure
 Java programming codes
 -  AbstractClasses/
    - ├── Car.java
@@ -234,7 +234,7 @@ Java programming codes
   
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 Java
 
@@ -260,7 +260,7 @@ VS Code
 
 ---
 
-## 🎯 Learning Outcome
+# 🎯 Learning Outcome
 
 - By exploring this repository, you will:
 
@@ -274,7 +274,7 @@ VS Code
 
 ---
 
-## 👤 Author
+# 👤 Author
 
 Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
@@ -283,7 +283,7 @@ Mayank Kapoor
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you find this project helpful:
 
@@ -296,7 +296,7 @@ Happy Coding! 🚀
 
 ---
 
-## 🔥 Next Improvements (Optional)
+# 🔥 Next Improvements (Optional)
 
 - Add **badges** for Java, GitHub stars, and license
 
