@@ -1,18 +1,32 @@
-## 📘 Java Object-Oriented Programming (OOP) & Projects
+# 📘 Java Object-Oriented Programming (OOP) & Projects
 
 This repository contains Java programs and projects demonstrating key Java concepts.
 It is designed for beginners and intermediate learners who want to understand Java programming in a practical and hands-on way.
 
 ---
 
-## 📖 About the Project
+# 📖 About the Project
 
 Java is a versatile, object-oriented programming language widely used in software development.
 This repository covers core Java concepts such as OOP, exception handling, collections, multithreading, JDBC, and small projects to apply the concepts practically.
 
 ---
 
+# 🚀 Features
+
 ## ✅ Topics Covered
+- ✅ Core Java Concepts
+- ✅ Object-Oriented Programming (OOP)
+- ✅ Exception Handling
+- ✅ Collections Framework
+- ✅ Multithreading
+- ✅ JDBC with MySQL
+- ✅ DSA Implementations
+- ✅ Sorting & Searching Algorithms
+- ✅ Backtracking Problems
+- ✅ Mini Java Projects
+- ✅ LeetCode Solutions in Java
+
 ## 🧱 Object-Oriented Programming (OOP)
 
 - 🧱Classes and Objects
@@ -32,6 +46,8 @@ This repository covers core Java concepts such as OOP, exception handling, colle
     - Thread creation
     - Runnable interface
     - Thread synchronization
+    - Life Cycle Of Threading
+    - Executor Threads
 
 - 💾 JDBC (Java Database Connectivity)
     - Connecting Java with databases
@@ -46,29 +62,29 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
   ---
 
-## ✅ DSA Concepts Covered
+# ✅ DSA Concepts Covered
 
-📊 Arrays
+- 📊 Arrays
 
-⚙️ Loops
+- ⚙️ Loops
 
-🔗 Linked List (Singly / Doubly)
+- 🔗 Linked List (Singly / Doubly)
 
-📚 Stack
+- 📚 Stack
 
-🧺 Queue
+- 🧺 Queue
 
-🌳 Trees (Binary Tree, BST)
+- 🌳 Trees (Binary Tree, BST)
 
-🕸️ Graphs (Basic Representation)
+-🕸️ Graphs (Basic Representation)
 
-🔍 Searching Algorithms
+- 🔍 Searching Algorithms
 
    - Linear Search/ Sequential Search
 
    -  Binary Search
 
-📐 Sorting Algorithms
+- 📐 Sorting Algorithms
 
    - Bubble Sort
 
@@ -90,10 +106,10 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 
    - Heap Sort
 
-🧠 Recursion
+- 🧠 Recursion
 
 
-🔙 Backtracking
+- 🔙 Backtracking
 
    - N-Queens Problem  
    - Sudoku Solver  
@@ -107,20 +123,27 @@ This repository covers core Java concepts such as OOP, exception handling, colle
    - Combination Sum I
    - Combination Sum II
 
-⏱️ Time & Space Complexity (Basics)
+- ⏱️ Time & Space Complexity (Basics)
 
 ---
 
-## LeetCode Problems Solution In Java
+# 🧪 LeetCode Problems Solution In Java
+
+This repository also contains solutions to various LeetCode problems implemented in Java to improve:
+
+- Problem-solving skills
+- Coding interview preparation
+- Algorithmic thinking
+
 ---
 
-## 📁 Folder Structure
+# 📁 Folder Structure
 Java programming codes
 -  AbstractClasses/
    - ├── Car.java
    - ├── Running.java
    - └── Vechicle.java
--  Encapuslation/
+-  Encapsulation/
    - ├── Atm.java
    - └── Print.java
 -  Exception-Handling/
@@ -211,7 +234,7 @@ Java programming codes
   
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 Java
 
@@ -221,11 +244,23 @@ MySQL
 
 Git & GitHub
 
-IDEs: Eclipse, IntelliJ IDEA, VS Code
+Postman
+
+Xampp
+
+Tomcat
+
+Eclipse
+
+NetBeans
+
+IntelliJ IDEA
+
+VS Code
 
 ---
 
-## 🎯 Learning Outcome
+# 🎯 Learning Outcome
 
 - By exploring this repository, you will:
 
@@ -239,7 +274,7 @@ IDEs: Eclipse, IntelliJ IDEA, VS Code
 
 ---
 
-## 👤 Author
+# 👤 Author
 
 Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
@@ -248,7 +283,7 @@ Mayank Kapoor
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you find this project helpful:
 
@@ -261,7 +296,7 @@ Happy Coding! 🚀
 
 ---
 
-## 🔥 Next Improvements (Optional)
+# 🔥 Next Improvements (Optional)
 
 - Add **badges** for Java, GitHub stars, and license
 
