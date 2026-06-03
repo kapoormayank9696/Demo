@@ -1,7 +1,6 @@
-// LeetCode Problem 110: Balanced Binary Tree
+// Balanced Binary Tree Algorithm Implementation in Java
 
-public class Solution110 {
-    
+public class Balanced_BT {
     // Node class for the binary tree
     public static class TreeNode {
         // Data members

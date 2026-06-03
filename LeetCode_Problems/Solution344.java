@@ -17,6 +17,7 @@ public class Solution344 {
             right--;
         }
     }
+    
     // Main function
     public static void main(String[] args) throws Exception{
         try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in));){
