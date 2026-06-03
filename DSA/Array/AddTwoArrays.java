@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class AddTwoArrays {
+    
     // Function to add both arrays in first array
     public static int[] addArray(int[] num,int n,int[] nums1) {
         int[] result=new int[num.length+nums1.length];
