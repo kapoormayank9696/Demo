@@ -74,6 +74,7 @@ public class Balanced_BST {
 
     // Main function
     public static void main(String[] args) {
+        
         // Integer[] values = {9,3, 20, null, null, 15, 7};
         Integer[] values = {1,2,2,3,null,null,3,4,null,null,4};
         TreeNode root = null;
