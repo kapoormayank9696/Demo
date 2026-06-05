@@ -1,4 +1,3 @@
-
 //Child Class of Species Class
 
 public class Human extends Species{
