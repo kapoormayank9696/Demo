@@ -27,7 +27,8 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 - ✅ Mini Java Projects
 - ✅ LeetCode Solutions in Java
 
-## 🧱 Object-Oriented Programming (OOP)
+
+# 🧱 Object-Oriented Programming (OOP)
 
 - 🧱Classes and Objects
 - 🔐 Encapsulation
@@ -312,4 +313,7 @@ Happy Coding! 🚀
 
 ---
 
+# 🚀 Happy Coding!
 
+
+---
