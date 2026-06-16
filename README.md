@@ -279,7 +279,8 @@ VS Code
 
 # 👤 Author
 
-Mayank Kapoor
+# Mayank Kapoor
+
 📧 Email: kapoormayank645@gmail.com
 
 🌐 GitHub: https://github.com/kapoormayank9696
