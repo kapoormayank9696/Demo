@@ -1,7 +1,7 @@
 // LeetCode Problem 701: Insert into a Binary Search Tree
-// InOrder Traversal of a Binary Search Tree (BST) Algorithm Implementation In Java
 
 public class Solution701 {
+
     // Node class of Binary Search Tree(BST)
     public static class Node {
 
