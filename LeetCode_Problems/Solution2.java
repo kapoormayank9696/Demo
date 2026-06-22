@@ -1,7 +1,6 @@
 // LeetCode Problem 2: Add Two Numbers
 
 public class Solution2 {
-
     // Node class of Linked List
     public static class ListNode {
 
