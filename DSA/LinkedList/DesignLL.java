@@ -6,7 +6,6 @@ public class DesignLL {
 
     // Class to Design The Linked List
     public static class MyLinkedList {
-
         // Create Linked List
         LinkedList<Integer> list;
 
