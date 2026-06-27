@@ -1,7 +1,7 @@
+// Delete Nodes From Linked List Present in Array Algorithm Implementation In Java
 
 import java.util.HashSet;
 
-// Delete Nodes From Linked List Present in Array Algorithm Implementation In Java
 public class DeleteNode_Present_In_Array {
 
     // Node class of Linked List
