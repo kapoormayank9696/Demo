@@ -6,7 +6,6 @@ public class Solution3217 {
 
     // Node class of Linked List
     public static class ListNode {
-
         // Data Members
         public int val;
         public ListNode next;
