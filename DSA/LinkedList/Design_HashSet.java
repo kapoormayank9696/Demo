@@ -7,6 +7,7 @@ public class Design_HashSet {
 
     // HashSet Class
     public static class MyHashSet {
+
         // Set Class
         Set<Integer> set;
 
