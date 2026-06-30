@@ -6,8 +6,10 @@ public class Design_HashMap {
 
     public static class MyHashMap {
 
+        // HashMap Class
         HashMap<Integer, Integer> map;
 
+        // Constructor
         public MyHashMap() {
             map = new HashMap<>();
         }
@@ -35,6 +37,7 @@ public class Design_HashMap {
 
     // Main function
     public static void main(String[] args) {
+        // Create HashMap Object of Class
         MyHashMap hashMap = new MyHashMap();
 
         int[] nums = {1, 1, 2, 2, 1, 3, 2, 1, 2, 2, 2};
