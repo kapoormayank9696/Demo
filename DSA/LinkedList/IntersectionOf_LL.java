@@ -1,4 +1,4 @@
-// Palindrome Singly Linked List Algorithm Implementation In Java
+// Intersection Of Two Linked Lists Algorithm Implementation In Java
 
 public class IntersectionOf_LL {
 
