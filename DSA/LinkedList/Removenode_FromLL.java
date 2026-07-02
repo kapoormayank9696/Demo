@@ -82,7 +82,7 @@ public class Removenode_FromLL {
         }
     }
 
-    // 
+    // Main Function
     public static void main(String[] args) {
         Solution solution = new Solution();
         solution.insert(5);
