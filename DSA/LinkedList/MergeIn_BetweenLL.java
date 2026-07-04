@@ -75,7 +75,7 @@ public class MergeIn_BetweenLL {
         }
     }
 
-    // Main function
+    // Main
     public static void main(String[] args) {
         Solution solution = new Solution();
 
