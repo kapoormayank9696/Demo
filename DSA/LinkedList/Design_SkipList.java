@@ -19,7 +19,6 @@ public class Design_SkipList {
     }
 
     public static class Skiplist {
-
         // Public Access Modifier And Data Members
         public ListNode current = null;
 
