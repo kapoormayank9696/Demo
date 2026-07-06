@@ -5,9 +5,9 @@ public class Solution2816 {
     // Node class of Singly Linked List
     public static class ListNode {
 
-        // Default Access Modifier And Data Members
-        int val;
-        ListNode next;
+        // Public Access Modifier And Data Members
+        public int val;
+        public ListNode next;
 
         // Parameterized Constructor
         public ListNode(int val) {
@@ -17,7 +17,7 @@ public class Solution2816 {
     }
 
     public static class Solution {
-
+        // Public Access Modifier
         public ListNode head = null;
 
         // Insert the nodes in the Singly Linked List
