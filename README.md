@@ -51,6 +51,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
     - Life Cycle Of Threading
     - Executor Threads
 
+[![JDBC](https://img.shields.io/badge/JDBC-Database-orange?style=flat)](https://docs.oracle.com/javase/tutorial/jdbc/)
 - 💾 JDBC (Java Database Connectivity)
     - Connecting Java with databases
     - CRUD operations
