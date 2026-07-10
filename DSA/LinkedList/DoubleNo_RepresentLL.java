@@ -3,7 +3,6 @@
 public class DoubleNo_RepresentLL {
     // Node class of Singly Linked List
     public static class ListNode {
-
         // Default Access Modifier And Data Members
         int val;
         ListNode next;
