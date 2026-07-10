@@ -1,7 +1,6 @@
 // Double a Number Represented as a Linked List Algorithm Implementation In Java
 
 public class DoubleNo_RepresentLL {
-
     // Node class of Singly Linked List
     public static class ListNode {
 
