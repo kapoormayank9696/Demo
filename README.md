@@ -44,14 +44,14 @@ This repository covers core Java concepts such as OOP, exception handling, colle
     - LinkedList
     - Other List-based operations
 
-- 🧵 Multithreading
+- 🧵 Multithreading  [![Multithreading](https://img.shields.io/badge/Multithreading-Java-green?style=flat)](https://docs.oracle.com/javase/tutorial/essential/concurrency/)
     - Thread creation
     - Runnable interface
     - Thread synchronization
     - Life Cycle Of Threading
     - Executor Threads
 
-- 💾 JDBC (Java Database Connectivity)
+- 💾 JDBC (Java Database Connectivity) [![JDBC](https://img.shields.io/badge/JDBC-Database-orange?style=flat)](https://docs.oracle.com/javase/tutorial/jdbc/)
     - Connecting Java with databases
     - CRUD operations
     - Sample JDBC projects
