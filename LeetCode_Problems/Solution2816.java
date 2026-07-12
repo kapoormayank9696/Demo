@@ -1,4 +1,4 @@
-// LeetCode Problem 2816: Intersection of Two Linked Lists
+// LeetCode Problem 2816: Double a Number Represented as a Linked List
 
 public class Solution2816 {
 
@@ -34,19 +34,23 @@ public class Solution2816 {
             }
         }
 
-        // Intersection Operation
-        public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            if (headA == null || headB == null) {
-                return null;
+        // Function to double the value of each node in the linked list
+        public ListNode doubleIt(ListNode head) {
+            if(head.val >= 5) {
+                ListNode newHead = new ListNode(0);
+                newHead.next = head;
+                head = newHead;
             }
-
-            ListNode current = headA;
-            ListNode temp = headB;
-            while (temp != current) {
-                current = (current == null) ? headB : current.next;
-                temp = (temp == null) ? headA : temp.next;
+            
+            ListNode curr = head;
+            while(curr != null) {
+                curr.val = (curr.val * 2) % 10;
+                if(curr.next != null && curr.next.val >= 5) {
+                    curr.val++;
+                }
+                curr = curr.next;
             }
-            return current;
+            return head;
         }
 
         // Print the Singly Linked List
@@ -63,35 +67,17 @@ public class Solution2816 {
     // Main function
     public static void main(String[] args) {
         Solution solution = new Solution();
+        
+        solution.insert(1);
+        solution.insert(8);
+        solution.insert(9);
 
-        // Common part
-        ListNode common = new ListNode(8);
-        common.next = new ListNode(4);
-        common.next.next = new ListNode(5);
-
-        // List A: 4 -> 1 -> 8 -> 4 -> 5
-        ListNode headA = new ListNode(4);
-        headA.next = new ListNode(1);
-        headA.next.next = common;
-
-        // List B: 5 -> 6 -> 1 -> 8 -> 4 -> 5
-        ListNode headB = new ListNode(5);
-        headB.next = new ListNode(6);
-        headB.next.next = new ListNode(1);
-        headB.next.next.next = common;
-
-        System.out.print("List A: ");
-        solution.printList(headA);
-
-        System.out.print("List B: ");
-        solution.printList(headB);
-
-        ListNode intersection = solution.getIntersectionNode(headA, headB);
-
-        if (intersection != null) {
-            System.out.println("Intersection Node = " + intersection.val);
-        } else {
-            System.out.println("No Intersection");
-        }
+        System.out.print("Original List: ");
+        solution.printList(solution.head);
+        
+        ListNode ans = solution.doubleIt(solution.head);
+        
+        System.out.print("After Doubling: ");
+        solution.printList(ans);
     }
 }
