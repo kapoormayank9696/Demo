@@ -36,16 +36,16 @@ public class Solution2816 {
 
         // Function to double the value of each node in the linked list
         public ListNode doubleIt(ListNode head) {
-            if(head.val >= 5) {
+            if (head.val >= 5) {
                 ListNode newHead = new ListNode(0);
                 newHead.next = head;
                 head = newHead;
             }
             
             ListNode curr = head;
-            while(curr != null) {
+            while (curr != null) {
                 curr.val = (curr.val * 2) % 10;
-                if(curr.next != null && curr.next.val >= 5) {
+                if (curr.next != null && curr.next.val >= 5) {
                     curr.val++;
                 }
                 curr = curr.next;
