@@ -8,11 +8,13 @@ public class Design_TextEditior {
         // Default Access Modifier And Data Members
         char val;
         ListNode next;
+        ListNode prev;
 
         // Parameterized Constructor
         public ListNode(char val) {
             this.val = val;
             this.next = null;
+            this.prev = null;
         }
     }
 
