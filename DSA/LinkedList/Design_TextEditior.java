@@ -20,6 +20,7 @@ public class Design_TextEditior {
 
     public static class TextEditor {
 
+        // Default Access Modifier And Data Members
         public ListNode head = null;
         public ListNode cursor = null;
 
@@ -63,7 +64,7 @@ public class Design_TextEditior {
             return deleted;
         }
 
-        // Cursor Operation
+        // Left Cursor Operation
         public String cursorLeft(int k) {
             while (cursor != head && k > 0) {
                 cursor = cursor.prev;
@@ -72,6 +73,7 @@ public class Design_TextEditior {
             return getLast10();
         }
 
+        // Right Cursor Operation
         public String cursorRight(int k) {
             while (cursor.next != null && k > 0) {
                 cursor = cursor.next;
@@ -80,6 +82,7 @@ public class Design_TextEditior {
             return getLast10();
         }
 
+        // Get Last 10 Characters Operation
         public String getLast10() {
             StringBuilder sb = new StringBuilder();
 
