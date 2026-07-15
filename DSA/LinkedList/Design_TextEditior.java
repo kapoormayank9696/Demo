@@ -23,11 +23,13 @@ public class Design_TextEditior {
         public ListNode head = null;
         public ListNode cursor = null;
 
+        // Default Constructor
         public TextEditor() {
             head = new ListNode('#');
             cursor = head;
         }
-
+        
+        // Add Operation
         public void addText(String text) {
             for (char c : text.toCharArray()) {
                 ListNode node = new ListNode(c);
@@ -43,6 +45,7 @@ public class Design_TextEditior {
             }
         }
 
+        // Delete Operation
         public int deleteText(int k) {
             int deleted = 0;
 
@@ -60,6 +63,7 @@ public class Design_TextEditior {
             return deleted;
         }
 
+        // Cursor Operation
         public String cursorLeft(int k) {
             while (cursor != head && k > 0) {
                 cursor = cursor.prev;
