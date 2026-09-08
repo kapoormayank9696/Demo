@@ -10,23 +10,40 @@ public class RottenOrgane {
 
         // Orange Rotting Function
         public static int orangesRotting(int[][] grid) {
+            if (grid == null || grid.length == 0 || grid[0].length == 0) {
+                return 0;
+            }
+
             int rows = grid.length;
             int cols = grid[0].length;
 
             Queue<int[]> queue = new LinkedList<>();
-            boolean[][] visited = new boolean[rows][cols];
+            int fresh = 0;
 
-            queue.add(new int[]{0, 0}); // Add the initial rotten orange position
-            visited[0][0] = true;
+            for (int row = 0; row < rows; row++) {
+                for (int col = 0; col < cols; col++) {
+                    if (grid[row][col] == 2) {
+                        queue.add(new int[]{row, col});
+                    } else if (grid[row][col] == 1) {
+                        fresh++;
+                    }
+                }
+            }
+
+            int minutes = 0;
+            int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
             while(queue.size() > 0) {
+
                 int u =queue.poll()[0];
-                for(int neighbor: grid[u]) {
+                int v =queue.poll()[1];
+                for(int neighbor: grid[u][v]) {
                     if(!visited[neighbor]) {
                         visited[neighbor] = true;
                         queue.add(new int[]{neighbor});
                     }
                 }
+
             }
             return -1;
         }
