@@ -10,42 +10,15 @@ public class RottenOrgane {
 
         // Orange Rotting Function
         public static int orangesRotting(int[][] grid) {
-            if (grid == null || grid.length == 0 || grid[0].length == 0) {
-                return 0;
-            }
-
             int rows = grid.length;
             int cols = grid[0].length;
+            int ans = 0;
 
             Queue<int[]> queue = new LinkedList<>();
-            int fresh = 0;
 
-            for (int row = 0; row < rows; row++) {
-                for (int col = 0; col < cols; col++) {
-                    if (grid[row][col] == 2) {
-                        queue.add(new int[]{row, col});
-                    } else if (grid[row][col] == 1) {
-                        fresh++;
-                    }
-                }
-            }
+            // Push all sources in the queue
 
-            int minutes = 0;
-            int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-
-            while(queue.size() > 0) {
-
-                int u =queue.poll()[0];
-                int v =queue.poll()[1];
-                for(int neighbor: grid[u][v]) {
-                    if(!visited[neighbor]) {
-                        visited[neighbor] = true;
-                        queue.add(new int[]{neighbor});
-                    }
-                }
-
-            }
-            return -1;
+            return ans;
         }
     }
 
@@ -58,6 +31,7 @@ public class RottenOrgane {
         };
 
         Graph g = new Graph();
+        @SuppressWarnings("static-access")
         int result = g.orangesRotting(grid);
 
         System.out.println("Minimum minutes: " + result);
