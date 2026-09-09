@@ -5,11 +5,11 @@ import java.util.Queue;
 
 public class RottenOrgane {
 
+    @SuppressWarnings("SizeReplaceableByIsEmpty")
     // Graph Class
     public static class Graph {
 
         // Orange Rotting Function
-        @SuppressWarnings("SizeReplaceableByIsEmpty")
         public static int orangesRotting(int[][] grid) {
             int rows = grid.length;
             int cols = grid[0].length;
@@ -69,10 +69,9 @@ public class RottenOrgane {
             {0, 1, 1}
         };
 
-        Graph g = new Graph();
-        @SuppressWarnings("static-access")
-        int result = g.orangesRotting(grid);
+        // Create a graph object and call the orangesRotting function
+        int result = Graph.orangesRotting(grid);
 
-        System.out.println("Minimum minutes: " + result);
+        System.out.println("Minimum minutes: " + result+" minutes");
     }    
 }
