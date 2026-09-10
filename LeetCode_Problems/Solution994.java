@@ -1,4 +1,4 @@
-
+// LeetCode Problem 994: Rotting Oranges
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -63,6 +63,7 @@ public class Solution994 {
 
     // Main function
     public static void main(String[] args) {
+        // Input grid representing the oranges
         int[][] grid = {
             {2, 1, 1},
             {1, 1, 0},
