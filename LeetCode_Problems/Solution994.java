@@ -56,6 +56,14 @@ public class Solution994 {
                     visited[i][j+1] = true;
                 }
             }
+
+            for(int i = 0; i < rows; i++) {
+                for(int j = 0; j < cols; j++) {
+                    if(grid[i][j] == 1 && !visited[i][j]) {
+                        return -1;
+                    }
+                }
+            }
             
             return ans;
         }
