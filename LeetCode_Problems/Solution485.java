@@ -1,8 +1,9 @@
 // LeetCode Problem 485: Max Consecutive Ones
 public class Solution485 {
-
+    // Solution class for finding max consecutive ones
     public static class Solution {
-        
+
+        // Function to find the maximum number of consecutive 1s in the array
         public int findMaxConsecutiveOnes(int[] nums) {
             int count = 0, max = 0;
             for (int i = 0; i < nums.length; i++) {
@@ -18,6 +19,7 @@ public class Solution485 {
         }
     }
 
+    // Main function
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] nums = {1, 1, 0, 1, 1, 1};
