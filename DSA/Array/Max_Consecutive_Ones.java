@@ -1,4 +1,4 @@
-
+// Max Consecutive Ones Algorithm Implementation In Java
 public class Max_Consecutive_Ones {
     // Solution class for finding max consecutive ones
     public static class Solution {
