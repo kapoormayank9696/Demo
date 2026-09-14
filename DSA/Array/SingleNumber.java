@@ -1,4 +1,4 @@
-// 
+// Single Number in an Array Algorithm Implementation In Java
 public class SingleNumber {
 
     // Method to find the single number in an array where every element appears twice except for one
