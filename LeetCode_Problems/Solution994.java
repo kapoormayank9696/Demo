@@ -9,7 +9,7 @@ public class Solution994 {
     // Graph Class
     public static class Graph {
 
-        // Orange Rotting Function
+        // Orange Rotting Function And Public Access Modifier
         public static int orangesRotting(int[][] grid) {
             int rows = grid.length;
             int cols = grid[0].length;
