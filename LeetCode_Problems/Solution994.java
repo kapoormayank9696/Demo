@@ -28,6 +28,7 @@ public class Solution994 {
                 }
             }
 
+            // BFS Traversal
             while(queue.size() > 0) {
                 int i = queue.peek()[0];
                 int j = queue.peek()[1];
@@ -57,6 +58,7 @@ public class Solution994 {
                 }
             }
 
+            // Check if there are any fresh oranges left
             for(int i = 0; i < rows; i++) {
                 for(int j = 0; j < cols; j++) {
                     if(grid[i][j] == 1 && !visited[i][j]) {
