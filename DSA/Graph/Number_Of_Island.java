@@ -7,7 +7,7 @@ public class Number_Of_Island {
 
         // Island Count Function
         public int countIslands(int[][] grid) {
-            
+
             int count = 0;
             boolean[][] visited = new boolean[grid.length][grid[0].length];
 
@@ -25,6 +25,7 @@ public class Number_Of_Island {
 
         // Depth-First Search
         private void dfs(int[][] grid, boolean[][] visited, int i, int j) {
+            
             if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0 || visited[i][j]) {
                 return;
             }
