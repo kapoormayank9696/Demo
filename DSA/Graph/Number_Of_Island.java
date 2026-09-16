@@ -25,7 +25,7 @@ public class Number_Of_Island {
 
         // Depth-First Search
         private void dfs(int[][] grid, boolean[][] visited, int i, int j) {
-            
+
             if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0 || visited[i][j]) {
                 return;
             }
@@ -37,6 +37,7 @@ public class Number_Of_Island {
             dfs(grid, visited, i-1, j);
             dfs(grid, visited, i, j+1);
             dfs(grid, visited, i, j-1);
+            
         }
     }
 
