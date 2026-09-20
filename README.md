@@ -48,6 +48,7 @@ This repository covers core Java concepts such as OOP, exception handling, colle
 - ⚠️ Exception Handling
 
 - 📂 Collections & Data Structures
+  
     - ArrayList
     - LinkedList
     - Other List-based operations
