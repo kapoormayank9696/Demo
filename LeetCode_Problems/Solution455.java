@@ -1,6 +1,10 @@
+// LeetCode Problem 455: Assign Cookies
 public class Solution455 {
     
+    // Solution class for solving the Assign Cookies problem
     public static class Solution {
+
+        // QuickSort implementation to sort the arrays
         public void quickSort(int[] nums,int low,int high) {
             if(low< high) {
                 int pi = partition(nums,low,high);
@@ -9,6 +13,7 @@ public class Solution455 {
             }
         }
 
+        // Partition function used in QuickSort
         public int partition(int[] nums,int low,int high) {
             int pivot = nums[high];
             int i = low - 1;
@@ -28,6 +33,7 @@ public class Solution455 {
             return i;
         }
         
+        // Function to find the maximum number of content children
         public int findContentChildren(int[] g, int[] s) {
             quickSort(g,0,g.length-1);
             quickSort(s,0,s.length-1);
@@ -46,6 +52,7 @@ public class Solution455 {
         }
     }
 
+    // Main function
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] g = {1, 2, 3};
