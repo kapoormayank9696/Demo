@@ -1,4 +1,4 @@
-
+// Assign Cookies Algorithm Implementation in Java
 public class AssignCookies {
     
     // Solution class for solving the Assign Cookies problem
