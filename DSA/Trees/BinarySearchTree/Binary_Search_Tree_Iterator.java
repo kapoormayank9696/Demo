@@ -70,6 +70,7 @@ public class Binary_Search_Tree_Iterator {
         }
 
         // Constructor for Iterator
+        @SuppressWarnings("OverridableMethodCallInConstructor")
         BSTIterator(BSTNode root) {
             stack = new Stack<>();
             pushLeft(root);
