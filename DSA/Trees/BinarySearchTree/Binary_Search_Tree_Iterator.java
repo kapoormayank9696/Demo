@@ -99,8 +99,8 @@ public class Binary_Search_Tree_Iterator {
             return !stack.isEmpty();
         }
     }
+    
     // Main Class
-
     public static void main(String[] args) {
 
         int[] values = {9, 3, 20, 15, 7};
