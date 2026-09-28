@@ -105,12 +105,10 @@ public class Binary_Search_Tree_Iterator {
 
         int[] values = {9, 3, 20, 15, 7};
 
-
         // Object for creating BST
         BSTIterator bst = new BSTIterator();
 
         BSTNode root = null;
-
 
         // Create BST
         for (int value : values) {
@@ -118,29 +116,23 @@ public class Binary_Search_Tree_Iterator {
             root = bst.insert(root, value);
         }
 
-
         // Print BST
         System.out.print("Inorder Traversal of the BST: ");
 
         bst.printBST(root);
 
-
         System.out.println();
-
 
         // Create Iterator using root
         BSTIterator iterator = new BSTIterator(root);
 
-
         System.out.print("Binary Search Tree Iterator: ");
-
 
         // Iterate through BST
         while (iterator.hasNext()) {
 
             System.out.print(iterator.next() + " ");
         }
-
 
         System.out.println();
     }
