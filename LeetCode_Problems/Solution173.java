@@ -11,7 +11,7 @@ public class Solution173 {
         public BSTNode right;
 
         // Parameterized Constructor
-        BSTNode(int val) {
+        public BSTNode(int val) {
             this.val = val;
             this.left = null;
             this.right = null;
