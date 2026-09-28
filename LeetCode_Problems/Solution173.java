@@ -26,12 +26,12 @@ public class Solution173 {
 
         // Default Constructor
 
-        BSTIterator() {
+        public BSTIterator() {
             stack = new Stack<>();
         }
         
         // Create BST
-        BSTNode insert(BSTNode root, int value) {
+        public BSTNode insert(BSTNode root, int value) {
 
             // If root is empty
 
@@ -56,7 +56,7 @@ public class Solution173 {
 
         // Print Binary Search Tree
 
-        void printBST(BSTNode root) {
+        public void printBST(BSTNode root) {
 
             if (root == null) {
                 System.out.println("Empty Binary Search Tree..");
@@ -71,13 +71,13 @@ public class Solution173 {
 
         // Constructor for Iterator
         @SuppressWarnings("OverridableMethodCallInConstructor")
-        BSTIterator(BSTNode root) {
+        public BSTIterator(BSTNode root) {
             stack = new Stack<>();
             pushLeft(root);
         }
 
         // Push leftmost path into stack
-        void pushLeft(BSTNode root) {
+        public void pushLeft(BSTNode root) {
             while (root != null) {
                 stack.push(root);
                 root = root.left;
@@ -85,7 +85,7 @@ public class Solution173 {
         }
 
         // Return next smallest element
-        int next() {
+        public int next() {
             BSTNode temp = stack.pop();
 
             if (temp.right != null) {
@@ -95,12 +95,12 @@ public class Solution173 {
         }
 
         // Check whether next element exists
-        boolean hasNext() {
+        public boolean hasNext() {
             return !stack.isEmpty();
         }
     }
-    // Main Class
 
+    // Main Class
     public static void main(String[] args) {
 
         int[] values = {9, 3, 20, 15, 7};
