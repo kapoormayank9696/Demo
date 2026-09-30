@@ -63,7 +63,7 @@ public class Solution700 {
             }
 
             System.out.print(root.val+"-->");
-            
+
             // Recursive Calls Function
             print(root.left);
             print(root.right);
@@ -75,6 +75,7 @@ public class Solution700 {
         Integer[] values = {1,2,2,3,null,null,3,4,null,null,4};
         TreeNode root = null;
         Solution solution = new Solution();
+        
         for (Integer val : values) {
             if (val != null) {
                 root = solution.insert(root, val);
@@ -84,7 +85,13 @@ public class Solution700 {
         solution.print(root);
 
         int val = 2;
-        System.out.println("Search in binary tree: "+solution.searchBST(root, val));
+        TreeNode result = solution.searchBST(root, val);
+
+        if(result != null) {
+            System.out.println("Search in binary tree: " + result.val);
+        } else {
+            System.out.println("Value not found");
+        }
     }
 }
 
