@@ -57,13 +57,14 @@ public class Solution700 {
         }
 
         // Print BST
-        public void print(TreeNode root) {
+        public void print(TreeNode root) { 
             if(root == null) {
-                System.out.println("Empty Binary Search Tree!!!");
                 return;
             }
 
             System.out.print(root.val+"-->");
+            
+            // Recursive Calls Function
             print(root.left);
             print(root.right);
         }
