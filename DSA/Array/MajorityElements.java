@@ -1,5 +1,6 @@
 // Majority Element From an Array Algorithm Implement in a Java
 
+import java.util.Arrays;
 public class MajorityElements {
 
     // Function to find the majority element
@@ -9,6 +10,7 @@ public class MajorityElements {
         return nums[n/2];
     }
     
+    // Main function
     public static void main(String[] args) {
         int[] nums = {3, 2, 3};
         int majorityElement = findMajorityElement(nums);
