@@ -1,5 +1,5 @@
-// Missing Number in an Array Algorithm Implement in a Java
-public class MissingNumber {
+// LeetCode Problem 268: Missing Number
+public class Solution268 {
     // Function to find the missing number in an array using XOR operation
     public int missingNumber(int[] nums) {  
         int n = nums.length;   
@@ -11,9 +11,9 @@ public class MissingNumber {
 
     // Main function
     public static void main(String[] args) {
-        MissingNumber mn = new MissingNumber();
+        Solution268 sol = new Solution268();
         int[] nums = {3, 0, 1};
-        int missingNum = mn.missingNumber(nums);
+        int missingNum = sol.missingNumber(nums);
         System.out.println("The missing number is: " + missingNum);
     }
 }
