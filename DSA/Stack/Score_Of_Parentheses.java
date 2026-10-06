@@ -16,9 +16,14 @@ public class Score_Of_Parentheses {
             
             // Iterate through each character in the string
             for (int i = 0; i < s.length(); i++) {
+
+                // If the character is '(', push 0 onto the stack
                 if (s.charAt(i) == '(') {
                     stack.push(0);
-                } else {
+                } 
+                
+                // If the character is ')', calculate the score
+                else {
                     int innerScore = stack.pop();
                     int score = 0;
                     if(innerScore == 0) {
