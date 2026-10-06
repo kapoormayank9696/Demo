@@ -14,6 +14,7 @@ public class Score_Of_Parentheses {
             // Initialize with a base score of 0
             stack.push(0); 
             
+            // Iterate through each character in the string
             for (int i = 0; i < s.length(); i++) {
                 if (s.charAt(i) == '(') {
                     stack.push(0);
@@ -33,6 +34,7 @@ public class Score_Of_Parentheses {
         }
     }
 
+    // Main function
     public static void main(String[] args) {
         Solution solution = new Solution();
         String s = "(()(()))";
