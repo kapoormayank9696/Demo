@@ -16,6 +16,7 @@ public class Minimum_Add_To_Make_Parentheses_Valid {
                 }
             }
         }
+        
         return add + open;
     }
 
