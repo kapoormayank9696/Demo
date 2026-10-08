@@ -17,8 +17,8 @@ public class Flatten_Binary_Tree_To_Linked_List {
         }
     }
 
+    // Solution class
     public static class Solution {
-
         public int index = -1;
 
         // Build Binary Tree
@@ -71,6 +71,7 @@ public class Flatten_Binary_Tree_To_Linked_List {
         }
     }
 
+    // Main function
     public static void main(String[] args) {
         int[] arr = {
             1, 2, 3, -1, -1, 4, -1, -1,
