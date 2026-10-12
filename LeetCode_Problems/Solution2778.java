@@ -1,5 +1,7 @@
-// LeetCode Problem 2778 : 
+// LeetCode Problem 2778 : Sum of Squares of Special Elements 
 public class Solution2778 {
+
+    // Function of Sum Of Squares From An Array
     public static int sumOfSquares(int[] nums) {
         int n = nums.length;
         int sum = 0;
