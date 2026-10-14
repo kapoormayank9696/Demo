@@ -1,4 +1,4 @@
-// LeetCode Problem 116 : Populating Next Right Pointers in Each Node
+// Populating Next Right Pointers in Each Node Algorithm Implementation In Java
 
 public class Populating_Next_Right_Pointers_InEachNode {
     // TreeNode class
