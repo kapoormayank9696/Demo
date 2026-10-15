@@ -1,6 +1,7 @@
 // LeetCode Problem 13 : Roman to Integer
 public class Solution13 {
     
+    // Function to convert the roman number to integer number
     public static int romanToInt(String s) {
         int ans = 0,prev = 0,num = 0;
         for(int i=s.length()-1 ;i >= 0;i --) {
@@ -23,6 +24,7 @@ public class Solution13 {
         return ans;
     }
 
+    // Main function
     public static void main(String[] args) {
         String s  = "LVIII";
         System.out.println("Roman number to integer: "+romanToInt(s));
