@@ -1,5 +1,6 @@
 // House Robber Algorithm Implementation In Java
 public class House_Robber {
+    
     // Function to Rob
      public static int rob(int[] nums) {
         int prev2 = 0;
