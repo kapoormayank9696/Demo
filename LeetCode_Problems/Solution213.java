@@ -1,4 +1,4 @@
-// House Robber II Algorithm Implementation In Java    
+// LeetCode Problem 213 : House Robber II
 public class Solution213 {
 
     // Function to Help the Rob Method
