@@ -1,4 +1,4 @@
-// LeetCode Problem : Longest Uploaded Prefix
+// LeetCode Problem 2424 : Longest Uploaded Prefix
 public class Solution2424 {
 
     // Class Of LUPrefix
