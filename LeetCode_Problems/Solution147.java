@@ -1,4 +1,4 @@
-// LeetCode Problem 147 Insertion Sort List
+// LeetCode Problem 147 : Insertion Sort List
 public class Solution147 {
     // Class Of ListNode
     public static class ListNode {
