@@ -1,4 +1,4 @@
-// LeetCode Problem Flatten Nested List Iterator
+// LeetCode Problem 341 : Flatten Nested List Iterator
 
 import java.util.ArrayList;
 import java.util.Arrays;
