@@ -6,8 +6,8 @@ public class N_Ary_TreePreorderTraversal {
 
     // Node class for N-ary Tree
     public static class Node {
-        int val;
-        List<Node> children;
+        public int val;
+        public List<Node> children;
 
         // Parameterized Constructor
         Node(int x) {
