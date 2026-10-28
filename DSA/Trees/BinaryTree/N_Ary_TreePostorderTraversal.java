@@ -10,7 +10,7 @@ public class N_Ary_TreePostorderTraversal {
         public List<Node> children;
 
         // Parameterized Constructor
-        Node(int x) {
+        public Node(int x) {
             this.val = x;
             this.children = new ArrayList<>();
         }
@@ -67,6 +67,6 @@ public class N_Ary_TreePostorderTraversal {
         N_Ary_TreePostorderTraversal obj =
                 new N_Ary_TreePostorderTraversal();
 
-        System.out.println("Preorder List: " + obj.postorder(root));
+        System.out.println("Post Order List: " + obj.postorder(root));
     }
 }
