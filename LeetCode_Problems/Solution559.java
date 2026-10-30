@@ -1,5 +1,4 @@
-// Maximum Depth of N-ary Tree Algorithm Implementation In Java
-
+// LeetCode Problem 559 : Maximum Depth of N-ary Tree
 import java.util.ArrayList;
 import java.util.List;
 public class Solution559 {
