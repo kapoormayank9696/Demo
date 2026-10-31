@@ -1,5 +1,4 @@
 // Count the number of islands in a 2D grid using BFS Algorithm Implement in a Java
-
 public class Number_Of_Island {
 
     // Graph Class
