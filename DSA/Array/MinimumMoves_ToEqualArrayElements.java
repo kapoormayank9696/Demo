@@ -4,6 +4,7 @@ public class MinimumMoves_ToEqualArrayElements {
     // Function to calculate minimum moves to equal array elements
    public static int minMoves(int[] nums) {
         int min = nums[0];
+        
         for(int num:nums) {
             min = Math.min(min,num);
         }
