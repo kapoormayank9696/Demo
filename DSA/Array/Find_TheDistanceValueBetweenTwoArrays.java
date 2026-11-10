@@ -1,4 +1,4 @@
-// Find the Distance Value Between Two Arrays
+// Find the Distance Value Between Two Arrays Algorithm Implementation In Java
 public class Find_TheDistanceValueBetweenTwoArrays {
     public static class Solution {
 
