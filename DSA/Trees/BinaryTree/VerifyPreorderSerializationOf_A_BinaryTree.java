@@ -14,6 +14,7 @@ public class VerifyPreorderSerializationOf_A_BinaryTree {
                 if(node.equals("#")) slots --;
                 else slots++;
             }
+            
             return slots == 0;
         }
     }
