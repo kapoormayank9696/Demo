@@ -4,7 +4,8 @@ public class LengthOf_LastWord {
     // Length Of Last World
     public static int lengthOfLastWord(String s) {
         int length = 0;
-        for(int i=s.length()-1;i >= 0; i--) {
+        
+        for(int i = s.length()-1; i >= 0; i--) {
             if(s.charAt(i) != ' ') {
                 length++;
             } else {
