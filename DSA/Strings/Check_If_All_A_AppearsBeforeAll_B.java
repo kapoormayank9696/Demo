@@ -3,6 +3,8 @@ public class Check_If_All_A_AppearsBeforeAll_B {
 
     // Solution Class
     public static class Solution {
+        
+        // Function to check String All A's Appears Before All B's
         public boolean checkString(String s) {
             return !s.contains("ba");
         }
