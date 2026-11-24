@@ -3,6 +3,7 @@ public class Second_MinimumNode_InA_BinaryTree {
     
     // TreeNode Class
     public static class TreeNode {
+        // Public Access Specifier
         public int val;
         public TreeNode left;
         public TreeNode right;
