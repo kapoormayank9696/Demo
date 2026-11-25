@@ -10,9 +10,9 @@ public class Second_MinimumNode_InA_BinaryTree {
 
         // Parameterized Constructor
         public TreeNode(int x) {
-            val = x;
-            left = null;
-            right = null;
+            this.val = x;
+            this.left = null;
+            this.right = null;
         }
     }
 
